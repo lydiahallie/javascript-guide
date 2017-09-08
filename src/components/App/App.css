@@ -1,24 +1,16 @@
 .App {
   text-align: center;
+  background: url('https://images.pexels.com/photos/247791/pexels-photo-247791.png?w=940&h=650&auto=compress&cs=tinysrgb');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  background-attachment: fixed;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.app p {
   color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }

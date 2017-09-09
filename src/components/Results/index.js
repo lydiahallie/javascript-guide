@@ -28,6 +28,7 @@ export default class Results extends Component {
   render() {
     const { array, string, join, find, check, change } = this.state;
     let methods = METHODS;
+    let allMethods = METHODS;
 
     // Filter products if filters have been selected by user.
     const hasSelectedFilter = array || string || check || find || join || change;
@@ -56,6 +57,7 @@ export default class Results extends Component {
       <div className="results-wrapper">
           <div className="picker-wrapper">
             <div className="row">
+              <h2>Search for the right method</h2>
                 <div className="picker">
                   <input
                     onClick={this.filterItems}
@@ -115,7 +117,7 @@ export default class Results extends Component {
             <div className="navbar">
               <h4>All Methods</h4>
               <h5>ARRAY</h5>
-                {map(methods, (method)=> (
+                {map(allMethods, (method)=> (
                   <Link to={`/methods/${method.id}`}>
                     <p>{method.name}</p>
                   </Link>

@@ -106,6 +106,54 @@ const METHODS = [
     "goal": "check",
     "dataType": "array",
     "image": ""
+  },
+  {
+    id: 13,
+    "name": ".map()",
+    "description": "Creates a new array with the result of calling a function for each array element.",
+    "goal": "change",
+    "dataType": "array",
+    "image": ""
+  },
+  {
+    id: 14,
+    "name": ".pop()",
+    "description": "Removes the last element of an array, and returns that element.",
+    "goal": "change",
+    "dataType": "array",
+    "image": ""
+  },
+  {
+    id: 15,
+    "name": ".push()",
+    "description": "Adds new elements to the end of an array, and returns the new length.",
+    "goal": "change",
+    "dataType": "array",
+    "image": ""
+  },
+  {
+    id: 16,
+    "name": ".reduce()",
+    "description": "Reduce the values of an array to a single value (going left-to-right).",
+    "goal": "change",
+    "dataType": "array",
+    "image": ""
+  },
+  {
+    id: 17,
+    "name": ".reverse()",
+    "description": "Reverses the order of the elements in an array.",
+    "goal": "change",
+    "dataType": "array",
+    "image": ""
+  },
+  {
+    id: 18,
+    "name": ".shift()",
+    "description": "Removes the first element of an array, and returns that element.",
+    "goal": "",
+    "dataType": "array",
+    "image": ""
   }
 ];
 

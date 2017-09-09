@@ -1,0 +1,13 @@
+.show-method {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.show-method-header h1 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  border-bottom: 1px solid #3a3a3a;
+  padding: .5em;
+}

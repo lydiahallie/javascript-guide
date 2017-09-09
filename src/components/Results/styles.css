@@ -1,3 +1,9 @@
+.results-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .picker-wrapper {
   height: 10em;
   display: flex;
@@ -5,6 +11,8 @@
   justify-content: center;
   align-items: center;
   background-color: black;
+  width: 50em;
+  margin-left: 12em;
 }
 
 div.picker {
@@ -13,7 +21,8 @@ div.picker {
 }
 
 .results {
-  width: 100vw;
+  width: 90vw;
+  margin-left: 12vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -22,7 +31,7 @@ div.picker {
 
 .result {
   height: 30em;
-  width: 40em;
+  width: 35em;
   background: rgba(0, 0, 0, 0.8);
   margin: 1em;
   border-radius: 20px;
@@ -45,36 +54,28 @@ input {
   background-color: black;
 }
 
-#checkbox {
-  -webkit-appearance: none;
-	background-color: #fafafa;
-	border: 1px solid #cacece;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
-	padding: 6px;
-	border-radius: 3px;
-	display: inline-block;
-	position: relative;
-}
-
-#checkbox:active, #checkbox:checked:active {
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
-}
-
-#checkbox:checked {
-	background-color: #e9ecee;
-	border: 1px solid #adb8c0;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
-	color: #99a1a7;
-}
-
-#method-name {
+#method-name  {
   font-family: 'Raleway', sans-serif;
   border-bottom: 1px solid #3a3a3a;
   padding: .5em;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 #method-description {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p:hover {
+  color: white;
 }
 
 p a {
@@ -87,4 +88,21 @@ p a {
 p a:hover {
   color: white;
   transition: 0.5s;
+}
+
+.navbar {
+  height: 100vh;
+  background-color: black;
+  width: 12em;
+  position: fixed;
+  overflow: scroll;
+  margin-top: -10em;
+}
+
+.wrapper {
+  display: flex;
+}
+
+h4, h5 {
+  color: white;
 }

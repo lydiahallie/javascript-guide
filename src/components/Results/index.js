@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import map from 'lodash/map';
 import filter from 'lodash/filter';
 import METHODS from '../../assets/data/methods.js';
-import {Row, Input} from 'react-materialize';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 export default class Results extends Component {
@@ -53,23 +53,18 @@ export default class Results extends Component {
     }
 
     return (
-      <div>
-        <Row>
+      <div className="results-wrapper">
           <div className="picker-wrapper">
             <div className="row">
                 <div className="picker">
-                  <p>Pick Your Datatype</p>
-                  <Input
+                  <input
                     onClick={this.filterItems}
                     type="checkbox"
                     id="checkbox"
                     value="string"
                     disabled={array}
-                    className='filled-in'
-                    defaultChecked='checked'
                   />
                   <label htmlFor="category_dresses">String</label>
-
                   <input
                     onClick={this.filterItems}
                     type="checkbox"
@@ -82,7 +77,6 @@ export default class Results extends Component {
               </div>
 
               <div className="picker">
-                <p>Pick Your Goal</p>
                 <input
                   onClick={this.filterItems}
                   type="checkbox"
@@ -117,19 +111,31 @@ export default class Results extends Component {
                 <label htmlFor="goal_check">Change</label>
               </div>
             </div>
-          </Row>
-          <div className="results">
-            {map(methods, (method)=> (
-              <div className="result">
-                <div className="method-details">
-                  <h1 id="method-name">{method.name}</h1>
-                  <h4 id="method-description">{method.description}</h4>
-                  <img src={method.image} />
-                  <p><a href={method.URL}>Documentation</a></p>
+          <div className="wrapper">
+            <div className="navbar">
+              <h4>All Methods</h4>
+              <h5>ARRAY</h5>
+                {map(methods, (method)=> (
+                  <Link to={`/methods/${method.id}`}>
+                    <p>{method.name}</p>
+                  </Link>
+                ))}
+            </div>
+            <div className="results">
+                {map(methods, (method)=> (
+                <div className="result">
+                  <div className="method-details">
+                    <Link to={`/methods/${method.id}`}>
+                      <h1 id="method-name">{method.name}</h1>
+                    </Link>
+                    <h4 id="method-description">{method.description}</h4>
+                    <img src={method.image} />
+                    <p><a href={method.URL}>Documentation</a></p>
+                  </div>
                 </div>
-              </div>
-            ))}
-        </div>
+              ))}
+            </div>
+          </div>
       </div>
    );
   }

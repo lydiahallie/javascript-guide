@@ -21,10 +21,11 @@ const METHODS = [
     id: 3,
     "name": ".every()",
     "description": "checks if every element in an array pass a test",
+    "explanation":"The every method executes the provided callback function once for each element present in the array until it finds one where callback returns a falsy value. If such an element is found, the every method immediately returns false. Otherwise, if callback returns a truthy value for all elements, every returns true. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Callback is invoked with three arguments: the value of the element, the index of the element, and the Array object being traversed. If a thisArg parameter is provided to every, it will be used as callback's this value. Otherwise, the value undefined will be used as its this value.  The this value ultimately observable by callback is determined according to the usual rules for determining the this seen by a function. Every does not mutate the array on which it is called. The range of elements processed by every is set before the first invocation of callback. Elements which are appended to the array after the call to every begins will not be visited by callback. If existing elements of the array are changed, their value as passed to callback will be the value at the time every visits them; elements that are deleted are not visited. Every acts like the 'for all' quantifier in mathematics. In particular, for an empty array, it returns true. (It is vacuously true that all elements of the empty set satisfy any given condition.)",
     "goal": "check",
     "dataType": "array",
     "image": "https://image.ibb.co/jsk0jF/Screen_Shot_2017_09_07_at_20_33_44.png",
-    "URL": "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/every"
+    "URL": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"
   },
   {
     id: 4,
@@ -33,7 +34,7 @@ const METHODS = [
     "goal": "change",
     "dataType": "array",
     "image": "https://image.ibb.co/khzPda/Screen_Shot_2017_09_07_at_20_37_18.png",
-    "URL": "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/fill"
+    "URL": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill"
   },
   {
     id: 5,
@@ -87,7 +88,7 @@ const METHODS = [
     "goal": "check",
     "dataType": "other",
     "image":"https://image.ibb.co/ekOEda/Screen_Shot_2017_09_08_at_12_03_08.png",
-    "URL": "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray"
+    "URL": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray"
   },
   {
     id: 11,
@@ -96,7 +97,15 @@ const METHODS = [
     "goal": "join",
     "dataType": "array",
     "image": "https://image.ibb.co/fH0Kda/Screen_Shot_2017_09_08_at_13_59_38.png",
-    "URL": "https://www.w3schools.com/jsref/jsref_join.asp"
+    "URL": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join"
+  },
+  {
+    id: 12,
+    "name": ".lastIndexOf()",
+    "description": "Search the array for an element, starting at the end, and returns its position",
+    "goal": "check",
+    "dataType": "array",
+    "image": ""
   }
 ];
 

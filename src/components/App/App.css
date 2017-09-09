@@ -1,14 +1,14 @@
-.App {
+html {
   text-align: center;
   background: url('https://images.pexels.com/photos/247791/pexels-photo-247791.png?w=940&h=650&auto=compress&cs=tinysrgb');
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  flex-direction: column;
-  width: 100vw;
-  height: 100%;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
 }
 
 .app p {

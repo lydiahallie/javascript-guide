@@ -1,9 +1,19 @@
+.show-method-wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .show-method {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 0;
+  width: 70em;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
 }
 
 .show-method-header {

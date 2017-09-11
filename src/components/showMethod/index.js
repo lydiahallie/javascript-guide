@@ -9,7 +9,7 @@ class showMethod extends Component {
   render() {
     const method = find(METHODS, ['id', parseInt(this.props.match.params.id)]);
     return(
-      <div>
+      <div className="show-method-wrapper">
         <div className="back-btn">
           <Link to="/" component={App}>
             <p>Back</p>

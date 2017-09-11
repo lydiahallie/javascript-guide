@@ -28,7 +28,8 @@ export default class Results extends Component {
   render() {
     const { array, string, join, find, check, change } = this.state;
     let methods = METHODS;
-    let allMethods = METHODS;
+    let arrayMethods = filter(methods, ["dataType", "array"]);
+    let stringMethods = filter(methods, ["dataType", "string"]);
 
     // Filter products if filters have been selected by user.
     const hasSelectedFilter = array || string || check || find || join || change;
@@ -117,7 +118,14 @@ export default class Results extends Component {
             <div className="navbar">
               <h4>All Methods</h4>
               <h5>ARRAY</h5>
-                {map(allMethods, (method)=> (
+                {map(arrayMethods, (method)=> (
+                  <Link to={`/methods/${method.id}`}>
+                    <p>{method.name}</p>
+                  </Link>
+                ))}
+                <hr />
+              <h5>STRING</h5>
+                {map(stringMethods, (method)=> (
                   <Link to={`/methods/${method.id}`}>
                     <p>{method.name}</p>
                   </Link>

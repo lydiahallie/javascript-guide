@@ -22,6 +22,8 @@ class showMethod extends Component {
             <img src={method.image} />
             <p>{method.explanation}</p>
           </div>
+          <p data-height="265" data-theme-id="dark" data-slug-hash="ZXzymb" data-default-tab="js" data-user="lydiahallie" data-embed-version="2" data-pen-title="ZXzymb" className="codepen">See the Pen <a href="https://codepen.io/lydiahallie/pen/ZXzymb/">ZXzymb</a> by Lydia Hallie (<a href="https://codepen.io/lydiahallie">@lydiahallie</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
         </div>
       </div>
     )

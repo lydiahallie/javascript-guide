@@ -6,7 +6,7 @@ const METHODS = [
     goal: "Find",
     dataType: "string",
     image: "https://image.ibb.co/mF8pBv/Screen_Shot_2017_09_07_at_20_41_28.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt",
   },
   {
     id: 2,
@@ -21,7 +21,6 @@ const METHODS = [
     id: 3,
     name: ".every()",
     description: "checks if every element in an array pass a test",
-    "explanation":"The every method executes the provided callback function once for each element present in the array until it finds one where callback returns a falsy value. If such an element is found, the every method immediately returns false. Otherwise, if callback returns a truthy value for all elements, every returns true. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Callback is invoked with three arguments: the value of the element, the index of the element, and the Array object being traversed. If a thisArg parameter is provided to every, it will be used as callback's this value. Otherwise, the value undefined will be used as its this value.  The this value ultimately observable by callback is determined according to the usual rules for determining the this seen by a function. Every does not mutate the array on which it is called. The range of elements processed by every is set before the first invocation of callback. Elements which are appended to the array after the call to every begins will not be visited by callback. If existing elements of the array are changed, their value as passed to callback will be the value at the time every visits them; elements that are deleted are not visited. Every acts like the 'for all' quantifier in mathematics. In particular, for an empty array, it returns true. (It is vacuously true that all elements of the empty set satisfy any given condition.)",
     goal: "check",
     dataType: "array",
     image: "https://image.ibb.co/jsk0jF/Screen_Shot_2017_09_07_at_20_33_44.png",
@@ -309,27 +308,38 @@ const METHODS = [
   {
     id: 34,
     name: ".substring()",
-    description: "Extracts the characters from a string, between two specified indices."
+    description: "Extracts the characters from a string, between two specified indices.",
+    goal: "change",
+    dataType: "string",
+    image: "https://image.ibb.co/dFqKgv/Screen_Shot_2017_09_11_at_08_51_42.png",
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring"
   },
   {
     id: 35,
     name: ".toLowerCase()",
-    description: "Converts a string to lowercase letters."
+    description: "Converts a string to lowercase letters.",
+    goal: "change",
+    dataType: "string",
+    image: "https://image.ibb.co/n73mBv/Screen_Shot_2017_09_11_at_08_58_46.png",
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase"
   },
   {
     id: 36,
-    name: ".toString()",
-    description: "Returns the value of a String object."
+    name: ".toUpperCase()",
+    description: "Converts a string to uppercase letters.",
+    goal: "change",
+    dataType: "string",
+    image: "https://image.ibb.co/hv021v/Screen_Shot_2017_09_11_at_08_56_18.png",
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase"
   },
   {
     id: 37,
-    name: ".toUpperCase()",
-    description: "Converts a string to uppercase letters."
-  },
-  {
-    id: 38,
     name: ".trim()",
-    description: "Removes whitespace from both ends of a string."
+    description: "Removes whitespace from both ends of a string.",
+    goal: "change",
+    dataType: "string",
+    image: "https://image.ibb.co/by6jya/Screen_Shot_2017_09_11_at_09_06_06.png",
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim"
   }
 ];
 

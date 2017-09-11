@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   margin: 0;
   width: 70em;
   border-left: 4px solid black;
@@ -34,10 +34,18 @@
 .back-btn {
   background: rgba(0, 0, 0, 0.5);
   margin: 0;
-  padding: 0;
-  height: 2em;
+  padding: 1em;
+  border-radius: 30px;
+  width: 6em;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .back-btn p {
   margin: 0;
+}
+
+.show-method p {
+  color: rgba(255, 255, 255, 0.8);
+  font
+  -family: 'Source Sans Pro', sans-serif;
 }

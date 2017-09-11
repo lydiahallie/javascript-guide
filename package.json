@@ -32,6 +32,7 @@
     "postcss-loader": "2.0.6",
     "promise": "8.0.1",
     "react": "^15.6.1",
+    "react-codepen": "^0.1.0",
     "react-dev-utils": "^4.0.1",
     "react-dom": "^15.6.1",
     "react-materialize": "^1.0.11",

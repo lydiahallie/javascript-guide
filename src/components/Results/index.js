@@ -120,14 +120,14 @@ export default class Results extends Component {
               <h5>ARRAY</h5>
                 {map(arrayMethods, (method)=> (
                   <Link to={`/methods/${method.id}`}>
-                    <p>{method.name}</p>
+                    <p id="method-name-p">{method.name}</p>
                   </Link>
                 ))}
                 <hr />
               <h5>STRING</h5>
                 {map(stringMethods, (method)=> (
                   <Link to={`/methods/${method.id}`}>
-                    <p>{method.name}</p>
+                    <p id="method-name-p">{method.name}</p>
                   </Link>
                 ))}
             </div>

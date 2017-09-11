@@ -42,6 +42,13 @@ div.picker {
   align-items: center;
 }
 
+.method-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 label {
   color: rgba(255, 255, 255, 0.8);
   font-family: 'Raleway', sans-serif;
@@ -58,6 +65,7 @@ input {
   font-family: 'Raleway', sans-serif;
   border-bottom: 1px solid #3a3a3a;
   padding: .5em;
+  margin: 0;
 }
 
 a {
@@ -103,8 +111,14 @@ p a:hover {
   display: flex;
 }
 
-h2, h4, h5 {
+h2, h5 {
   color: white;
+}
+
+h4 {
+  font-size: 20px;
+  width: 25em;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 h2 {
@@ -127,4 +141,8 @@ input[type=checkbox] {
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+#method-name-p {
+  margin: 1em;
 }

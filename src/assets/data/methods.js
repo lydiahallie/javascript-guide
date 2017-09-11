@@ -1,3 +1,6 @@
+import React from 'react';
+import './styles.css';
+
 const METHODS = [
   {
     id: 1,
@@ -7,6 +10,18 @@ const METHODS = [
     dataType: "string",
     image: "https://image.ibb.co/mF8pBv/Screen_Shot_2017_09_07_at_20_41_28.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt",
+    hash: "ZXzymb",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.charAt()</code> method returns the character at the index that is equal to the value of your argument. The argument is the number that is passed inbetween the parenthesees. If we want to have the character that is positioned at index 4, we would write:</p>
+        <div className="code-example">
+          <p id="code"><code><span id="red">.charAt</span>(<span id="pink">4</span>)</code></p>
+          <p><code id="red">.charAt()</code> = The method we use in order to find the right index.</p>
+          <p><code id="pink">4</code> = The index of the character we want to have returned.</p>
+        </div>
+
+      </div>
+    )
   },
   {
     id: 2,
@@ -15,7 +30,8 @@ const METHODS = [
     goal: "join",
     dataType: "array",
     image: "https://image.ibb.co/gKoajF/Screen_Shot_2017_09_08_at_12_55_09.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat?v=b"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat?v=b",
+    hash: "MEgEVq"
   },
   {
     id: 3,
@@ -24,7 +40,8 @@ const METHODS = [
     goal: "check",
     dataType: "array",
     image: "https://image.ibb.co/jsk0jF/Screen_Shot_2017_09_07_at_20_33_44.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every",
+    hash: "wrwqrv"
   },
   {
     id: 4,
@@ -33,7 +50,8 @@ const METHODS = [
     goal: "change",
     dataType: "array",
     image: "https://image.ibb.co/khzPda/Screen_Shot_2017_09_07_at_20_37_18.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill",
+    hash: "YrKrBW"
   },
   {
     id: 5,
@@ -42,7 +60,8 @@ const METHODS = [
     goal: "find",
     dataType: "array",
     image: "https://image.ibb.co/dpaA1v/Screen_Shot_2017_09_08_at_11_04_42.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter",
+    hash: "yzBzrQ"
   },
   {
     id: 6,
@@ -51,7 +70,8 @@ const METHODS = [
     goal: "find",
     dataType: "array",
     image: "https://image.ibb.co/grK3Mv/Screen_Shot_2017_09_08_at_11_07_55.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find",
+    hash: "MEgOKR"
   },
   {
     id: 7,
@@ -60,16 +80,18 @@ const METHODS = [
     goal: "find",
     dataType: "array",
     image:"https://image.ibb.co/hDs9Ta/Screen_Shot_2017_09_08_at_11_22_03.png",
-    URL:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex"
+    URL:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex",
+    hash: "pWzdeB"
   },
   {
     id: 8,
     name: ".forEach()",
     description: "Calls a function for each array element.",
-    goal: "find",
+    goal: "change",
     dataType: "array",
     image: "https://image.ibb.co/ngoYoa/Screen_Shot_2017_09_08_at_11_27_24.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach",
+    hash: "eGOeRO"
   },
   {
     id: 9,
@@ -78,7 +100,8 @@ const METHODS = [
     goal: "find",
     dataType: "array",
     image: "https://image.ibb.co/ifQ2gv/Screen_Shot_2017_09_08_at_11_46_54.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf",
+    hash: "WZeXZL"
   },
   {
     id: 10,
@@ -87,7 +110,8 @@ const METHODS = [
     goal: "check",
     dataType: "other",
     image:"https://image.ibb.co/ekOEda/Screen_Shot_2017_09_08_at_12_03_08.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray",
+    hash: "MEgQxz"
   },
   {
     id: 11,
@@ -96,7 +120,8 @@ const METHODS = [
     goal: "join",
     dataType: "array",
     image: "https://image.ibb.co/fH0Kda/Screen_Shot_2017_09_08_at_13_59_38.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join",
+    hash: "QqLQXx"
   },
   {
     id: 12,
@@ -105,7 +130,8 @@ const METHODS = [
     goal: "check",
     dataType: "array",
     image: "https://image.ibb.co/ju3WTa/Screen_Shot_2017_09_10_at_13_54_24.png",
-    URL:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"
+    URL:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf",
+    hash: "PJYQMK"
   },
   {
     id: 13,
@@ -114,7 +140,8 @@ const METHODS = [
     goal: "change",
     dataType: "array",
     image: "https://image.ibb.co/dd9xjF/Screen_Shot_2017_09_10_at_14_00_02.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map",
+    hash: "VMZXwK"
   },
   {
     id: 14,
@@ -123,7 +150,8 @@ const METHODS = [
     goal: "change",
     dataType: "array",
     image: "https://image.ibb.co/c0MtPF/Screen_Shot_2017_09_10_at_14_01_59.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop",
+    hash: "gGYeaG"
   },
   {
     id: 15,
@@ -132,7 +160,8 @@ const METHODS = [
     goal: "change",
     dataType: "array",
     image: "https://image.ibb.co/gVNHjF/Screen_Shot_2017_09_10_at_14_12_01.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push?v=b"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push?v=b",
+    hash: "xXKWVw"
   },
   {
     id: 16,
@@ -141,7 +170,8 @@ const METHODS = [
     goal: "change",
     dataType: "array",
     image: "https://image.ibb.co/gVNHjF/Screen_Shot_2017_09_10_at_14_12_01.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce?v=b"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce?v=b",
+    hash: ""
   },
   {
     id: 17,
@@ -150,7 +180,8 @@ const METHODS = [
     goal: "change",
     dataType: "array",
     image: "https://image.ibb.co/mLgwBv/Screen_Shot_2017_09_10_at_15_55_47.png",
-    URL: "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse"
+    URL: "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse",
+    hash: "eGOMzw"
   },
   {
     id: 18,
@@ -159,7 +190,8 @@ const METHODS = [
     goal: "",
     dataType: "array",
     image: "https://image.ibb.co/ck4f4F/Screen_Shot_2017_09_10_at_16_13_53.png",
-    URL: ""
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift",
+    hash: "PJYRpQ"
   },
   {
     id: 19,
@@ -168,7 +200,8 @@ const METHODS = [
     goal: "change",
     dataType: "array",
     image: "https://image.ibb.co/n5dPgv/Screen_Shot_2017_09_10_at_17_44_02.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice",
+    hash: "pWzLPB"
   },
   {
     id: 20,
@@ -177,7 +210,8 @@ const METHODS = [
     goal: "check",
     dataType: "array",
     image: "https://image.ibb.co/c9ZV4F/Screen_Shot_2017_09_10_at_16_32_11.png",
-    URL: "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/some"
+    URL: "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/some",
+    hash: "veBRZJ"
   },
   {
     id: 21,
@@ -186,7 +220,8 @@ const METHODS = [
     goal: "change",
     dataType: "array",
     image: "https://image.ibb.co/ft1UWv/Screen_Shot_2017_09_10_at_16_37_50.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort",
+    hash: "aLoYyd"
   },
   {
     id: 22,
@@ -195,7 +230,8 @@ const METHODS = [
     goal: "change",
     dataType: "array",
     image: "https://image.ibb.co/msvLMv/Screen_Shot_2017_09_10_at_17_03_14.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice",
+    hash: "yzBKzd"
   },
   {
     id: 23,
@@ -204,7 +240,8 @@ const METHODS = [
     goal: "change",
     dataType: "array",
     image: "https://image.ibb.co/khprTa/Screen_Shot_2017_09_10_at_17_11_47.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString",
+    hash: "jGNzzR"
   },
   {
     id: 24,
@@ -213,7 +250,8 @@ const METHODS = [
     goal: "change",
     dataType: "array",
     image: "https://image.ibb.co/nBk1uF/Screen_Shot_2017_09_10_at_17_15_18.png",
-    URL: "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift"
+    URL: "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift",
+    hash: "NaKYzo"
   },
   {
     id: 25,
@@ -222,7 +260,8 @@ const METHODS = [
     goal: "join",
     dataType: "string",
     image: "https://image.ibb.co/kPt71v/Screen_Shot_2017_09_10_at_18_06_36.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat",
+    hash: "dVbmqz"
   },
   {
     id: 26,
@@ -231,7 +270,8 @@ const METHODS = [
     goal: "check",
     dataType: "string",
     image: "https://image.ibb.co/bUuVMv/Screen_Shot_2017_09_10_at_18_22_27.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith",
+    hash: "NaKYOJ"
   },
   {
     id: 27,
@@ -240,7 +280,8 @@ const METHODS = [
     goal: "check",
     dataType: "string",
     image: "https://image.ibb.co/gftMuF/Screen_Shot_2017_09_10_at_18_42_37.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes",
+    hash: "bobMNy"
   },
   {
     id: 27,
@@ -249,7 +290,8 @@ const METHODS = [
     goal: "check",
     dataType: "string",
     image: "https://image.ibb.co/cO4Y8a/Screen_Shot_2017_09_10_at_18_49_28.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf",
+    hash: "qPWYdV"
   },
   {
     id: 28,
@@ -258,7 +300,8 @@ const METHODS = [
     goal: "change",
     dataType: "string",
     image: "https://image.ibb.co/hnp5Mv/Screen_Shot_2017_09_10_at_18_51_41.png",
-    URL: "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/String/repeat"
+    URL: "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/String/repeat",
+    hash: "jGNxbE"
   },
   {
     id: 29,
@@ -267,7 +310,8 @@ const METHODS = [
     goal: "change",
     dataType: "string",
     image: "https://image.ibb.co/nrpY8a/Screen_Shot_2017_09_10_at_20_27_49.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace",
+    hash: "XerqXp"
   },
   {
     id: 30,
@@ -276,7 +320,8 @@ const METHODS = [
     goal: "change",
     dataType: "string",
     image: "https://image.ibb.co/mb8X1v/Screen_Shot_2017_09_10_at_20_31_19.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice",
+    hash: "QqLrEw"
   },
   {
     id: 31,
@@ -285,7 +330,8 @@ const METHODS = [
     goal: "change",
     dataType: "string",
     image: "https://image.ibb.co/gJWfoa/Screen_Shot_2017_09_10_at_20_33_04.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split",
+    hash: "veBjKz"
   },
   {
     id: 32,
@@ -294,7 +340,8 @@ const METHODS = [
     goal: "check",
     dataType: "string",
     image: "https://image.ibb.co/mUUa4F/Screen_Shot_2017_09_10_at_20_37_45.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith",
+    hash: "YrKLpO"
   },
   {
     id: 33,
@@ -303,7 +350,8 @@ const METHODS = [
     goal: "change",
     dataType: "string",
     image: "https://image.ibb.co/fD6irv/Screen_Shot_2017_09_10_at_20_41_08.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr",
+    hash: "WZeJpb"
   },
   {
     id: 34,
@@ -312,7 +360,8 @@ const METHODS = [
     goal: "change",
     dataType: "string",
     image: "https://image.ibb.co/dFqKgv/Screen_Shot_2017_09_11_at_08_51_42.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring",
+    hash: "aLoGJL"
   },
   {
     id: 35,
@@ -321,7 +370,8 @@ const METHODS = [
     goal: "change",
     dataType: "string",
     image: "https://image.ibb.co/n73mBv/Screen_Shot_2017_09_11_at_08_58_46.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase",
+    hash: "OxLZpY"
   },
   {
     id: 36,
@@ -330,7 +380,8 @@ const METHODS = [
     goal: "change",
     dataType: "string",
     image: "https://image.ibb.co/hv021v/Screen_Shot_2017_09_11_at_08_56_18.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase",
+    hash: "yzBjbJ"
   },
   {
     id: 37,
@@ -339,7 +390,8 @@ const METHODS = [
     goal: "change",
     dataType: "string",
     image: "https://image.ibb.co/by6jya/Screen_Shot_2017_09_11_at_09_06_06.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim"
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim",
+    hash: "zEOjwd"
   }
 ];
 

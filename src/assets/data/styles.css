@@ -1,0 +1,31 @@
+.code-example {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#explanation-text {
+  margin-top: 1em;
+}
+
+p {
+  margin: 0;
+}
+
+#code {
+  margin: 1.5em;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 1em;
+  width: 9em;
+}
+
+#red {
+  color: #EB0063;
+}
+
+#pink {
+  color: #EB5B98;
+}

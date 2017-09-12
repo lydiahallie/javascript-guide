@@ -1,108 +1,95 @@
+// Dependencies
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import filter from 'lodash/filter';
-import METHODS from '../../assets/data/methods.js';
+import isEqual from 'lodash/isEqual';
+// Externals
+import METHODS from '../App/METHODS';
+// Internals
 import MethodsList from './components/MethodsList';
+const stringMethods = filter(METHODS, ['dataType', 'string']);
+const arrayMethods = filter(METHODS, ['dataType', 'array']);
+
 
 class Navbar extends Component {
+  static propTypes = {
+    filterMethods: PropTypes.func.isRequired,
+  };
+
   constructor(props) {
     super(props);
     this.state = {
-      array: false,
-      string: false,
-      other: false,
-      join: false,
-      find: false,
-      check: false,
-      change: false
+      filterOptions: {
+        array: false,
+        string: false,
+        other: false,
+        check: false,
+        find: false,
+        join: false,
+        change: false,
+      },
     };
   }
 
-  filterItems = (event) => {
-    // event.target.value will be either 'array', 'string', 'other', 'join', 'find', 'check' or 'change'
-    // Toggle this.state.array, string, etc. will be set to either true or false.
-    const toggledValue = !this.state[event.target.value];
-    this.setState({ [event.target.value]: toggledValue });
+  updateFilter = (key) => {
+    const { filterOptions } = this.state;
+    filterOptions[key] = !filterOptions[key];
+    this.props.filterMethods(filterOptions);
+    this.setState({ filterOptions });
   }
 
   render() {
-    const { array, string, other, join, find, check, change } = this.state;
-    let methods = METHODS;
-    const arrayMethods = filter(methods, ['dataType', 'array']);
-    const stringMethods = filter(methods, ['dataType', 'string']);
+    const { updateFilter } = this;
+    const { filterOptions } = this.state;
+    const { array, string, other, check, find, join, change } = filterOptions;
 
-    // Filter products if filters have been selected by user.
-    const hasSelectedFilter = array || string || other || check || find || join || change;
-    if (hasSelectedFilter) {
-      if (array) {
-        methods = filter(methods, ['dataType', 'array'])
-      }
-      if (string) {
-        methods = filter(methods, ['dataType', 'string'])
-      }
-      if (other) {
-        methods = filter(methods, ['dataType', 'other'])
-      }
-      if (join) {
-        methods = filter(methods, ['goal', 'join'])
-      }
-      if (check) {
-        methods = filter(methods, ['goal', 'check'])
-      }
-      if (find) {
-        methods = filter(methods, ['goal', 'find'])
-      }
-      if (change) {
-        methods = filter(methods, ['goal', 'change'])
-      }
-    }
-
-    return(
+    return (
       <div className="navbar">
         <div className="button-row">
           <button
-            onClick={this.filterItems}
-            value="string"
             disabled={array || other}
+            onClick={() => updateFilter('string')}
           >
-          String</button>
+            String
+          </button>
           <button
-            onClick={this.filterItems}
-            value="array"
             disabled={string || other}
+            onClick={() => updateFilter('array')}
           >
-          Array</button>
+            Array
+          </button>
           <button
-            onClick={this.filterItems}
-            value="other"
             disabled={string || array}
+            onClick={() => updateFilter('other')}
           >
-          Other</button>
+            Other
+          </button>
         </div>
         <div className="button-row">
           <button
-            onClick={this.filterItems}
-            value="join"
             disabled={check || find || change}
+            onClick={() => updateFilter('join')}
           >
-          Join</button>
+            Join
+          </button>
           <button
-            onClick={this.filterItems}
-            value="check"
             disabled={join || find || change}
+            onClick={() => updateFilter('check')}
           >
-          Check</button>
+            Check
+          </button>
           <button
-            onClick={this.filterItems}
-            value="find"
             disabled={join || check || change}
+            onClick={() => updateFilter('find')}
           >
-          Find</button>
+            Find
+          </button>
           <button
-            onClick={this.filterItems}
-            value="change"
             disabled={join || find || check}
+            onClick={() => updateFilter('change')}
           >
-          Change</button>
+            Change
+          </button>
         </div>
         <MethodsList
           label="STRING"

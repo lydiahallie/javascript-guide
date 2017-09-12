@@ -6,12 +6,12 @@ import showMethod from './components/showMethod';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-ReactDOM.render(
+ReactDOM.render((
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={App} />
       <Route exact path="/methods/:id" component={showMethod} />
     </Switch>
   </BrowserRouter>
-, document.getElementById('root'));
+), document.getElementById('root'));
 registerServiceWorker();

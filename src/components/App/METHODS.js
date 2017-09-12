@@ -1,5 +1,4 @@
-import React from 'react';
-import './styles.css';
+// import React from 'react';
 
 const METHODS = [
   {
@@ -388,16 +387,6 @@ const METHODS = [
     hash: "bobMNy"
   },
   {
-    id: 27,
-    name: ".indexOf()",
-    description: "Returns the position of the first found occurrence of a specified value in a string.",
-    goal: "check",
-    dataType: "string",
-    image: "https://image.ibb.co/cO4Y8a/Screen_Shot_2017_09_10_at_18_49_28.png",
-    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf",
-    hash: "qPWYdV"
-  },
-  {
     id: 28,
     name: ".repeat()",
     description: "Returns a new string with a specified number of copies of an existing string.",
@@ -496,7 +485,17 @@ const METHODS = [
     image: "https://image.ibb.co/by6jya/Screen_Shot_2017_09_11_at_09_06_06.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim",
     hash: "zEOjwd"
-  }
+  },
+  {
+    id: 38,
+    name: ".indexOf()",
+    description: "Returns the position of the first found occurrence of a specified value in a string.",
+    goal: "check",
+    dataType: "string",
+    image: "https://image.ibb.co/cO4Y8a/Screen_Shot_2017_09_10_at_18_49_28.png",
+    URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf",
+    hash: "qPWYdV"
+  },
 ];
 
 export default METHODS;

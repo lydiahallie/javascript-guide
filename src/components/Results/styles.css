@@ -1,149 +1,91 @@
-.results-wrapper {
+.results-wrapper, .results, .result, .method-details, .navbar {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-.picker-wrapper {
-  height: 10em;
-  display: flex;
+.results-wrapper, .result, .method-details, .navbar {
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  width: 50em;
-  margin-left: 12em;
-  padding: 1em;
 }
 
-div.picker {
-  display: flex;
-  flex-direction: row;
+.results, .method-details {
   justify-content: center;
 }
 
 .results {
-  width: 90vw;
-  margin-left: 12vw;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  margin-left: 15vw;
+  width: 85vw;
 }
 
 .result {
-  height: 30em;
-  width: 35em;
   background: rgba(0, 0, 0, 0.8);
-  margin: 1em;
   border-radius: 20px;
   color: white;
-  display: flex;
-  flex-direction: column;
+  height: 30em;
   justify-content: space-around;
-  align-items: center;
+  margin: 1em;
+  width: 35em;
 }
 
-.method-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-label {
-  color: rgba(255, 255, 255, 0.8);
+a, button, h2, h5, .method-details h1 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  font-size: 20px;
-  margin: 0 2em 0 0;
 }
 
-input {
-  background-color: black;
+.navbar p, p a, .method-details h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-#method-name  {
-  font-family: 'Raleway', sans-serif;
+a, p:hover, p a:hover, h2, h5 {
+  color: white;
+}
+
+.method-details h1 {
   border-bottom: 1px solid #3a3a3a;
   padding: .5em;
   margin: 0;
 }
 
-a {
-  color: white;
+a, p a {
   text-decoration: none;
+  cursor: pointer;
 }
 
-#method-description {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-.navbar p {
-  color: rgba(255, 255, 255, 0.5);
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-p:hover {
-  color: white;
+p a:hover, button, .methods p, .methods p:hover {
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 p a {
   color: rgba(255, 255, 255, 0.5);
-  font-family: 'Source Sans Pro', sans-serif;
-  text-decoration: none;
   transition: 0.5s;
-  cursor: pointer;
-}
-
-p a:hover {
-  color: white;
-  transition: 0.5s;
-  cursor: pointer;
 }
 
 .navbar {
   background-color: black;
-  width: 14em;
-  position: fixed;
-  overflow: scroll;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.wrapper {
-  display: flex;
-}
-
-h2, h5 {
-  color: white;
-  font-family: 'Raleway', sans-serif;
-
+  overflow: scroll;
+  position: fixed;
+  width: 14em;
 }
 
 h4 {
-  font-size: 20px;
   color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
 }
 
-h2 {
-  font-family: 'Raleway', sans-serif;
+h5 {
+  font-size: 18px;
 }
 
 button {
-  height: 3em;
-  width: 10em;
   background-color: rgba(255, 255, 255, 0.2);
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
   border: 1px solid black;
   color: rgba(255, 255, 255, 0.4);
-  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
   font-weight: 200;
-  transition: 0.5s;
+  height: 3em;
+  width: 10em;
 }
 
 button:hover {
@@ -157,20 +99,16 @@ button:focus {
 }
 
 button:disabled {
-  color: #282828;
   background-color: #404144;
+  color: #282828;
 }
 
-#method-name-p {
-  margin: 1em;
-  transition: 0.5s;
+.methods p {
+  font-size: 18px;
+  margin: 1em 0;
 }
 
-#method-name-p:hover {
-  transition: 0.5s;
-  cursor: pointer;
-}
-.array-methods {
+.methods {
   border-bottom: 1px solid grey;
   width: 7em;
 }

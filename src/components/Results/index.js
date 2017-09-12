@@ -20,8 +20,8 @@ export default class Results extends Component {
   }
 
   filterItems = (event) => {
-    // event.target.value will be either 'small', 'medium', or 'large'
-    // Toggle this.state.small, medium, and large to either true or false.
+    // event.target.value will be either 'array', 'string', 'other', 'join', 'find', 'check' or 'change'
+    // Toggle this.state.array, string, etc. will be set to either true or false.
     const toggledValue = !this.state[event.target.value];
     this.setState({ [event.target.value]: toggledValue });
   }
@@ -60,85 +60,89 @@ export default class Results extends Component {
 
     return (
       <div className="results-wrapper">
-          <div className="wrapper">
-            <div className="navbar">
-              <div className="button-row">
-                <button
-                  onClick={this.filterItems}
-                  value="string"
-                  disabled={array || other}
-                >
-                String</button>
-                <button
-                  onClick={this.filterItems}
-                  value="array"
-                  disabled={string || other}
-                >
-                Array</button>
-                <button
-                  onClick={this.filterItems}
-                  value="other"
-                  disabled={string || array}
-                >
-                Other</button>
-              </div>
-              <div className="button-row">
-                <button
-                  onClick={this.filterItems}
-                  value="join"
-                  disabled={check || find || change}
-                >
-                Join</button>
-                <button
-                  onClick={this.filterItems}
-                  value="check"
-                  disabled={join || find || change}
-                >
-                Check</button>
-                <button
-                  onClick={this.filterItems}
-                  value="find"
-                  disabled={join || check || change}
-                >
-                Find</button>
-                <button
-                  onClick={this.filterItems}
-                  value="change"
-                  disabled={join || find || check}
-                >
-                Change</button>
-              </div>
-              <div className="array-methods">
-                <h5>ARRAY</h5>
-                  {map(arrayMethods, (method)=> (
-                    <Link to={`/methods/${method.id}`}>
-                      <p id="method-name-p">{method.name}</p>
-                    </Link>
-                  ))}
-              </div>
-              <h5>STRING</h5>
-                {map(stringMethods, (method)=> (
-                  <Link to={`/methods/${method.id}`}>
-                    <p id="method-name-p">{method.name}</p>
-                  </Link>
-                ))}
+        <div className="wrapper">
+          {/* NAVBAR */}
+          <div className="navbar">
+            <div className="button-row">
+              <button
+                onClick={this.filterItems}
+                value="string"
+                disabled={array || other}
+              >
+              String</button>
+              <button
+                onClick={this.filterItems}
+                value="array"
+                disabled={string || other}
+              >
+              Array</button>
+              <button
+                onClick={this.filterItems}
+                value="other"
+                disabled={string || array}
+              >
+              Other</button>
             </div>
-            <div className="results">
-                {map(methods, (method)=> (
-                <div className="result">
-                  <div className="method-details">
-                    <Link to={`/methods/${method.id}`}>
-                      <h1 id="method-name">{method.name}</h1>
-                    </Link>
-                    <h4 id="method-description">{method.description}</h4>
-                    <img src={method.image} />
-                    <p><a href={method.URL}>Documentation</a></p>
-                  </div>
-                </div>
+            <div className="button-row">
+              <button
+                onClick={this.filterItems}
+                value="join"
+                disabled={check || find || change}
+              >
+              Join</button>
+              <button
+                onClick={this.filterItems}
+                value="check"
+                disabled={join || find || change}
+              >
+              Check</button>
+              <button
+                onClick={this.filterItems}
+                value="find"
+                disabled={join || check || change}
+              >
+              Find</button>
+              <button
+                onClick={this.filterItems}
+                value="change"
+                disabled={join || find || check}
+              >
+              Change</button>
+            </div>
+            <div className="methods">
+              <h5>ARRAY</h5>
+              {map(arrayMethods, (method)=> (
+                <Link to={`/methods/${method.id}`}>
+                  <p id="method-name-p">{method.name}</p>
+                </Link>
+              ))}
+            </div>
+            <div className="methods">
+              <h5>STRING</h5>
+              {map(stringMethods, (method)=> (
+                <Link to={`/methods/${method.id}`}>
+                  <p id="method-name-p">{method.name}</p>
+                </Link>
               ))}
             </div>
           </div>
+          {/* RESULTS */}
+          <div className="results">
+            {map(methods, (method)=> (
+              <div className="result">
+                <div className="method-details">
+                  <Link to={`/methods/${method.id}`}>
+                    <h1>{method.name}</h1>
+                  </Link>
+                  <h4>{method.description}</h4>
+                  <img src={method.image} />
+                  <p><a href={method.URL}>Documentation</a></p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-   );
+    );
   }
 }

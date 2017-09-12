@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import filter from 'lodash/filter';
-import isEqual from 'lodash/isEqual';
 // Externals
 import METHODS from '../App/METHODS';
 // Internals

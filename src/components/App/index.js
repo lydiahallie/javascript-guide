@@ -5,6 +5,7 @@ import includes from 'lodash/includes';
 // Externals
 import Navbar from '../Navbar';
 import Results from '../Results';
+import Footer from '../Footer';
 // Internals
 import METHODS from './METHODS';
 import './styles.scss';
@@ -54,6 +55,7 @@ class App extends Component {
       <div className="App">
         <Navbar filterMethods={this.filterMethods} />
         <Results methods={this.state.filteredMethods} />
+        <Footer />
       </div>
     );
   }

@@ -2,7 +2,7 @@
   "name": "javascript-help",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lydiahallie.github.io",
+  "homepage": "https://lydiahallie.github.io/javascriptguide",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",

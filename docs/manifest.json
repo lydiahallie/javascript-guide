@@ -1,6 +1,7 @@
 {
   "short_name": "React App",
   "name": "Create React App Sample",
+  "homepage": "https://lydiahallie.github.io/javascriptguide"
   "icons": [
     {
       "src": "favicon.ico",

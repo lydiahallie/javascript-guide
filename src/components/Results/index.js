@@ -11,6 +11,7 @@ export default class Results extends Component {
     this.state = {
       array: false,
       string: false,
+      other: false,
       join: false,
       find: false,
       check: false,
@@ -26,19 +27,22 @@ export default class Results extends Component {
   }
 
   render() {
-    const { array, string, join, find, check, change } = this.state;
+    const { array, string, other, join, find, check, change } = this.state;
     let methods = METHODS;
     let arrayMethods = filter(methods, ["dataType", "array"]);
     let stringMethods = filter(methods, ["dataType", "string"]);
 
     // Filter products if filters have been selected by user.
-    const hasSelectedFilter = array || string || check || find || join || change;
+    const hasSelectedFilter = array || string || other || check || find || join || change;
     if (hasSelectedFilter) {
       if (array) {
         methods = filter(methods, ["dataType", "array"])
       }
       if (string) {
         methods = filter(methods, ["dataType", "string"])
+      }
+      if (other) {
+        methods = filter(methods, ["dataType", "other"])
       }
       if (join) {
         methods = filter(methods, ["goal", "join"])
@@ -56,74 +60,62 @@ export default class Results extends Component {
 
     return (
       <div className="results-wrapper">
-          <div className="picker-wrapper">
-            <div className="row">
-              <h2>Search for the right method</h2>
-                <div className="picker">
-                  <input
-                    onClick={this.filterItems}
-                    type="checkbox"
-                    id="checkbox"
-                    value="string"
-                    disabled={array}
-                  />
-                  <label htmlFor="category_dresses">String</label>
-                  <input
-                    onClick={this.filterItems}
-                    type="checkbox"
-                    id="checkbox"
-                    value="array"
-                    disabled={string}
-                  />
-                  <label htmlFor="category_tops">Array</label>
-                </div>
-              </div>
-
-              <div className="picker">
-                <input
-                  onClick={this.filterItems}
-                  type="checkbox"
-                  id="checkbox"
-                  value="Join"
-                  disabled={check || find || change}
-                />
-                <label htmlFor="goal_join">Join</label>
-                <input
-                  onClick={this.filterItems}
-                  type="checkbox"
-                  id="checkbox"
-                  value="check"
-                  disabled={join || find || change}
-                />
-                <label htmlFor="goal_check">Check</label>
-                <input
-                  onClick={this.filterItems}
-                  type="checkbox"
-                  id="checkbox"
-                  value="find"
-                  disabled={join || check || change}
-                />
-                <label htmlFor="goal_check">Find</label>
-                <input
-                  onClick={this.filterItems}
-                  type="checkbox"
-                  id="checkbox"
-                  value="change"
-                  disabled={join || find || check}
-                />
-                <label htmlFor="goal_check">Change</label>
-              </div>
-            </div>
           <div className="wrapper">
             <div className="navbar">
-              <h4>All Methods</h4>
-              <h5>ARRAY</h5>
-                {map(arrayMethods, (method)=> (
-                  <Link to={`/methods/${method.id}`}>
-                    <p id="method-name-p">{method.name}</p>
-                  </Link>
-                ))}
-                <hr />
+              <div className="button-row">
+                <button
+                  onClick={this.filterItems}
+                  value="string"
+                  disabled={array || other}
+                >
+                String</button>
+                <button
+                  onClick={this.filterItems}
+                  value="array"
+                  disabled={string || other}
+                >
+                Array</button>
+                <button
+                  onClick={this.filterItems}
+                  value="other"
+                  disabled={string || array}
+                >
+                Other</button>
+              </div>
+              <div className="button-row">
+                <button
+                  onClick={this.filterItems}
+                  value="join"
+                  disabled={check || find || change}
+                >
+                Join</button>
+                <button
+                  onClick={this.filterItems}
+                  value="check"
+                  disabled={join || find || change}
+                >
+                Check</button>
+                <button
+                  onClick={this.filterItems}
+                  value="find"
+                  disabled={join || check || change}
+                >
+                Find</button>
+                <button
+                  onClick={this.filterItems}
+                  value="change"
+                  disabled={join || find || check}
+                >
+                Change</button>
+              </div>
+              <div className="array-methods">
+                <h5>ARRAY</h5>
+                  {map(arrayMethods, (method)=> (
+                    <Link to={`/methods/${method.id}`}>
+                      <p id="method-name-p">{method.name}</p>
+                    </Link>
+                  ))}
+              </div>
               <h5>STRING</h5>
                 {map(stringMethods, (method)=> (
                   <Link to={`/methods/${method.id}`}>

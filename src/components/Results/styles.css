@@ -13,11 +13,13 @@
   background-color: black;
   width: 50em;
   margin-left: 12em;
+  padding: 1em;
 }
 
 div.picker {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .results {
@@ -91,20 +93,24 @@ p a {
   font-family: 'Source Sans Pro', sans-serif;
   text-decoration: none;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 p a:hover {
   color: white;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .navbar {
-  height: 100vh;
   background-color: black;
-  width: 12em;
+  width: 14em;
   position: fixed;
   overflow: scroll;
-  margin-top: -10em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wrapper {
@@ -113,11 +119,12 @@ p a:hover {
 
 h2, h5 {
   color: white;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 h4 {
   font-size: 20px;
-  width: 25em;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -125,24 +132,50 @@ h2 {
   font-family: 'Raleway', sans-serif;
 }
 
-input[type=checkbox] {
-  line-height: normal;
+button {
+  height: 3em;
+  width: 10em;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid black;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  transition: 0.5s;
 }
 
-.ant-checkbox-input {
-  position: absolute;
-  left: 0;
-  z-index: 1;
-  cursor: pointer;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: 0.5s;
+}
+
+button:focus {
+  background-color: grey;
+  outline: none;
+}
+
+button:disabled {
+  color: #282828;
+  background-color: #404144;
 }
 
 #method-name-p {
   margin: 1em;
+  transition: 0.5s;
+}
+
+#method-name-p:hover {
+  transition: 0.5s;
+  cursor: pointer;
+}
+.array-methods {
+  border-bottom: 1px solid grey;
+  width: 7em;
+}
+
+.button-row {
+  border-bottom: 1px solid grey;
+  padding: 1em;
 }

@@ -11,18 +11,18 @@ const METHODS = [
     image: "https://image.ibb.co/mF8pBv/Screen_Shot_2017_09_07_at_20_41_28.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt",
     hash: "ZXzymb",
-    explanation: (
-      <div className="explanation">
-        <p id="explanation-text">The <code>.charAt()</code> method returns the character at the index that is equal to the value of your argument. The argument is the number that is passed inbetween the parentheses.</p>
-        <div className="code-example">
-          <p id="code"><code><span id="red">.charAt</span>(<span id="pink">4</span>)</code></p>
-          <div className="code-explanation">
-            <p><code id="red">.charAt()</code> = The method we use in order to find the right index.</p>
-            <p><code id="pink">4</code> = The index of the character we want to have returned.</p>
-          </div>
-        </div>
-      </div>
-    )
+    // explanation: (
+    //   <div className="explanation">
+    //     <p id="explanation-text">The <code>.charAt()</code> method returns the character at the index that is equal to the value of your argument. The argument is the number that is passed inbetween the parentheses.</p>
+    //     <div className="code-example">
+    //       <p id="code"><code><span id="red">.charAt</span>(<span id="pink">4</span>)</code></p>
+    //       <div className="code-explanation">
+    //         <p><code id="red">.charAt()</code> = The method we use in order to find the right index.</p>
+    //         <p><code id="pink">4</code> = The index of the character we want to have returned.</p>
+    //       </div>
+    //     </div>
+    //   </div>
+    // )
   },
   {
     id: 2,
@@ -33,24 +33,24 @@ const METHODS = [
     image: "https://image.ibb.co/gKoajF/Screen_Shot_2017_09_08_at_12_55_09.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat?v=b",
     hash: "MEgEVq",
-    explanation: (
-      <div className="explanation">
-        <p id="explanation-text">The <code>.concat()</code> method concatenates two arrays. It returns a new array, it doesn't modify the original arrays.</p>
-        <div className="code-example">
-          <p id="code">
-            <p><code>let <span id="orange">arr1</span> = [<span id="pink">'Hello'</span>];</code></p>
-            <p><code>let <span id="lightpurple">arr2</span> = [<span id="pink">'World'</span>];</code></p>
-            <p><code><span id="orange">arr1</span><span id="red">.concat(<span id="lightpurple">arr2</span>)</span> = <span id="green">['Hello', 'World']</span>;</code></p>
-          </p>
-          <div className="code-explanation">
-            <p><code id="red">.concat()</code> = The method we use in order to concatenate our arrays.</p>
-            <p><code id="orange">arr1</code> = Our first array, the value of this array will be the first value of our new array with the concatenated values.</p>
-            <p><code id="lightpurple">arr2</code> = Our second array, the value of this array will be the second value of our new array with the concatenated values.</p>
-            <p><code id="green">['Hello', 'World']</code> = Our new array which contains the values of the arrays we concatenated.</p>
-          </div>
-        </div>
-      </div>
-    )
+    // explanation: (
+    //   <div className="explanation">
+    //     <p id="explanation-text">The <code>.concat()</code> method concatenates two arrays. It returns a new array, it doesn't modify the original arrays.</p>
+    //     <div className="code-example">
+    //       <p id="code">
+    //         <p><code>let <span id="orange">arr1</span> = [<span id="pink">'Hello'</span>];</code></p>
+    //         <p><code>let <span id="lightpurple">arr2</span> = [<span id="pink">'World'</span>];</code></p>
+    //         <p><code><span id="orange">arr1</span><span id="red">.concat(<span id="lightpurple">arr2</span>)</span> = <span id="green">['Hello', 'World']</span>;</code></p>
+    //       </p>
+    //       <div className="code-explanation">
+    //         <p><code id="red">.concat()</code> = The method we use in order to concatenate our arrays.</p>
+    //         <p><code id="orange">arr1</code> = Our first array, the value of this array will be the first value of our new array with the concatenated values.</p>
+    //         <p><code id="lightpurple">arr2</code> = Our second array, the value of this array will be the second value of our new array with the concatenated values.</p>
+    //         <p><code id="green">['Hello', 'World']</code> = Our new array which contains the values of the arrays we concatenated.</p>
+    //       </div>
+    //     </div>
+    //   </div>
+    // )
   },
   {
     id: 3,
@@ -61,23 +61,23 @@ const METHODS = [
     image: "https://image.ibb.co/jsk0jF/Screen_Shot_2017_09_07_at_20_33_44.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every",
     hash: "wrwqrv",
-    explanation: (
-      <div className="explanation">
-        <p id="explanation-text">The <code>.every()</code> method checks if every element in an array passes a test. The test is a function that you create yourself.</p>
-        <div className="code-example">
-          <p id="code">
-            <p><code>const <span id="orange">testValue</span> = (<span id="pink">x => x >= 10</span>);</code></p>
-            <p><code><span id="green">[2, 4, 9, 10, 20]</span><span id="red">.every</span>(<span id="orange">testValue</span>);</code></p>
-          </p>
-          <div className="code-explanation">
-            <p><code id="orange">testValue</code> = The name of the function that contains the "test".</p>
-            <p><code id="pink">(x = x >= 10)</code> = This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. This basically says: check every single item, if every single item is (in this case) bigger or equal to 10, then return true.</p>
-            <p><code id="green">[2, 4, 9, 10, 20]</code> = The array we want to have checked.</p>
-            <p><code id="red">.every()</code> = The method we use in order to check whether every single item in the array returned true, thus passed our test.</p>
-          </div>
-        </div>
-      </div>
-    )
+    // explanation: (
+    //   <div className="explanation">
+    //     <p id="explanation-text">The <code>.every()</code> method checks if every element in an array passes a test. The test is a function that you create yourself.</p>
+    //     <div className="code-example">
+    //       <p id="code">
+    //         <p><code>const <span id="orange">testValue</span> = (<span id="pink">x => x >= 10</span>);</code></p>
+    //         <p><code><span id="green">[2, 4, 9, 10, 20]</span><span id="red">.every</span>(<span id="orange">testValue</span>);</code></p>
+    //       </p>
+    //       <div className="code-explanation">
+    //         <p><code id="orange">testValue</code> = The name of the function that contains the "test".</p>
+    //         <p><code id="pink">(x = x >= 10)</code> = This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. This basically says: check every single item, if every single item is (in this case) bigger or equal to 10, then return true.</p>
+    //         <p><code id="green">[2, 4, 9, 10, 20]</code> = The array we want to have checked.</p>
+    //         <p><code id="red">.every()</code> = The method we use in order to check whether every single item in the array returned true, thus passed our test.</p>
+    //       </div>
+    //     </div>
+    //   </div>
+    // )
   },
   {
     id: 4,
@@ -88,23 +88,23 @@ const METHODS = [
     image: "https://image.ibb.co/khzPda/Screen_Shot_2017_09_07_at_20_37_18.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill",
     hash: "YrKrBW",
-    explanation: (
-      <div className="explanation">
-        <p id="explanation-text">The <code>.every()</code> method checks if every element in an array passes a test. The test is a function that you create yourself.</p>
-        <div className="code-example">
-          <p id="code">
-            <p><code>let <span id="orange">numbers</span> = <span id="pink">[1, 2, 3]</span>;</code></p>
-            <p><code><span id="orange">numbers</span><span id="red">.fill</span>(<span id="lightpurple">3</span>);</code></p>
-          </p>
-          <div className="code-explanation">
-            <p><code id="orange">numbers</code> = The name of our array that we want to change.</p>
-            <p><code id="pink">[1, 2, 3]</code> = The array that we want to change</p>
-            <p><code id="red">.fill()</code> = The method we use in order to fill every value in the array with the value that we pass as argument.</p>
-            <p><code id="lightpurple">3</code> = The value that we want every single item in the array to have.</p>
-          </div>
-        </div>
-      </div>
-    )
+    // explanation: (
+    //   <div className="explanation">
+    //     <p id="explanation-text">The <code>.every()</code> method checks if every element in an array passes a test. The test is a function that you create yourself.</p>
+    //     <div className="code-example">
+    //       <p id="code">
+    //         <p><code>let <span id="orange">numbers</span> = <span id="pink">[1, 2, 3]</span>;</code></p>
+    //         <p><code><span id="orange">numbers</span><span id="red">.fill</span>(<span id="lightpurple">3</span>);</code></p>
+    //       </p>
+    //       <div className="code-explanation">
+    //         <p><code id="orange">numbers</code> = The name of our array that we want to change.</p>
+    //         <p><code id="pink">[1, 2, 3]</code> = The array that we want to change</p>
+    //         <p><code id="red">.fill()</code> = The method we use in order to fill every value in the array with the value that we pass as argument.</p>
+    //         <p><code id="lightpurple">3</code> = The value that we want every single item in the array to have.</p>
+    //       </div>
+    //     </div>
+    //   </div>
+    // )
   },
   {
     id: 5,
@@ -115,23 +115,23 @@ const METHODS = [
     image: "https://image.ibb.co/dpaA1v/Screen_Shot_2017_09_08_at_11_04_42.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter",
     hash: "yzBzrQ",
-    explanation: (
-      <div className="explanation">
-        <p id="explanation-text">The <code>.filter()</code> method checks if an element passes a test, and adds that item to a new array.</p>
-        <div className="code-example">
-          <p id="code">
-            <p><code>const <span id="orange">isBigEnough</span> = (<span id="pink">x => x >= 10</span>);</code></p>
-            <p><code><span id="green">[1, 4, 19, -1, 14]</span><span id="red">.filter</span>(<span id="orange">isBigEnough</span>);</code></p>
-          </p>
-          <div className="code-explanation">
-            <p><code id="orange">isBigEnough</code> = The name of the function that contains the "test".</p>
-            <p><code id="pink">(x = x >= 10)</code> = This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. This basically says: check every single item, if an item is (in this case) bigger or equal to 10, then the item has passed the test</p>
-            <p><code id="green">[1, 4, 19, -1, 14]</code> = The array we want to filter through.</p>
-            <p><code id="red">.filter()</code> = The method we use in order to add the items that passed our "test" to a new array.</p>
-          </div>
-        </div>
-      </div>
-    )
+    // explanation: (
+    //   <div className="explanation">
+    //     <p id="explanation-text">The <code>.filter()</code> method checks if an element passes a test, and adds that item to a new array.</p>
+    //     <div className="code-example">
+    //       <p id="code">
+    //         <p><code>const <span id="orange">isBigEnough</span> = (<span id="pink">x => x >= 10</span>);</code></p>
+    //         <p><code><span id="green">[1, 4, 19, -1, 14]</span><span id="red">.filter</span>(<span id="orange">isBigEnough</span>);</code></p>
+    //       </p>
+    //       <div className="code-explanation">
+    //         <p><code id="orange">isBigEnough</code> = The name of the function that contains the "test".</p>
+    //         <p><code id="pink">(x = x >= 10)</code> = This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. This basically says: check every single item, if an item is (in this case) bigger or equal to 10, then the item has passed the test</p>
+    //         <p><code id="green">[1, 4, 19, -1, 14]</code> = The array we want to filter through.</p>
+    //         <p><code id="red">.filter()</code> = The method we use in order to add the items that passed our "test" to a new array.</p>
+    //       </div>
+    //     </div>
+    //   </div>
+    // )
   },
   {
     id: 6,
@@ -142,23 +142,23 @@ const METHODS = [
     image: "https://image.ibb.co/grK3Mv/Screen_Shot_2017_09_08_at_11_07_55.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find",
     hash: "MEgOKR",
-    explanation: (
-      <div className="explanation">
-        <p id="explanation-text">The <code>.find()</code> method checks if an element passes a test, and returns the value of the first item that passed the test.</p>
-        <div className="code-example">
-          <p id="code">
-            <p><code>const <span id="orange">isBigEnough</span> = (<span id="pink">x => x >= 10</span>);</code></p>
-            <p><code><span id="green">[1, 4, 19, -1, 14]</span><span id="red">.filter</span>(<span id="orange">isBigEnough</span>);</code></p>
-          </p>
-          <div className="code-explanation">
-            <p><code id="orange">isBigEnough</code> = The name of the function that contains the "test".</p>
-            <p><code id="pink">(x = x >= 10)</code> = This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. If an item is (in this case) bigger or equal to 10, then that item has passed the test. The <code>.find()</code> method returns only the first value it finds.</p>
-            <p><code id="green">[1, 4, 19, -1, 14]</code> = The array we want to check.</p>
-            <p><code id="red">.find()</code> = The method we use in order to get the value of the first item in the array that passed the test.</p>
-          </div>
-        </div>
-      </div>
-    )
+    // explanation: (
+    //   <div className="explanation">
+    //     <p id="explanation-text">The <code>.find()</code> method checks if an element passes a test, and returns the value of the first item that passed the test.</p>
+    //     <div className="code-example">
+    //       <p id="code">
+    //         <p><code>const <span id="orange">isBigEnough</span> = (<span id="pink">x => x >= 10</span>);</code></p>
+    //         <p><code><span id="green">[1, 4, 19, -1, 14]</span><span id="red">.find</span>(<span id="orange">isBigEnough</span>);</code></p>
+    //       </p>
+    //       <div className="code-explanation">
+    //         <p><code id="orange">isBigEnough</code> = The name of the function that contains the "test".</p>
+    //         <p><code id="pink">(x = x >= 10)</code> = This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. If an item is (in this case) bigger or equal to 10, then that item has passed the test. The <code>.find()</code> method returns only the first value it finds.</p>
+    //         <p><code id="green">[1, 4, 19, -1, 14]</code> = The array we want to check.</p>
+    //         <p><code id="red">.find()</code> = The method we use in order to get the value of the first item in the array that passed the test.</p>
+    //       </div>
+    //     </div>
+    //   </div>
+    // )
   },
   {
     id: 7,
@@ -169,23 +169,23 @@ const METHODS = [
     image:"https://image.ibb.co/hDs9Ta/Screen_Shot_2017_09_08_at_11_22_03.png",
     URL:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex",
     hash: "pWzdeB",
-    explanation: (
-      <div className="explanation">
-        <p id="explanation-text">The <code>.find()</code> method checks if an element passes a test, and returns the value of the first item that passed the test.</p>
-        <div className="code-example">
-          <p id="code">
-            <p><code>const <span id="orange">isBigEnough</span> = (<span id="pink">x => x >= 10</span>);</code></p>
-            <p><code><span id="green">[1, 4, 19, -1, 14]</span><span id="red">.filter</span>(<span id="orange">isBigEnough</span>);</code></p>
-          </p>
-          <div className="code-explanation">
-            <p><code id="orange">isBigEnough</code> = The name of the function that contains the "test".</p>
-            <p><code id="pink">(x = x >= 10)</code> = This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. If an item is (in this case) bigger or equal to 10, then that item has passed the test. The <code>.find()</code> method returns only the first value it finds.</p>
-            <p><code id="green">[1, 4, 19, -1, 14]</code> = The array we want to check.</p>
-            <p><code id="red">.find()</code> = The method we use in order to get the value of the first item in the array that passed the test.</p>
-          </div>
-        </div>
-      </div>
-    )
+    // explanation: (
+    //   <div className="explanation">
+    //     <p id="explanation-text">The <code>.findIndex()</code> method returns the index of the first element in an array that pass a test.</p>
+    //     <div className="code-example">
+    //       <p id="code">
+    //         <p><code>const <span id="orange">isBigEnough</span> = (<span id="pink">x => x >= 10</span>);</code></p>
+    //         <p><code><span id="green">[1, 4, 19, -1, 14]</span><span id="red">.filter</span>(<span id="orange">isBigEnough</span>);</code></p>
+    //       </p>
+    //       <div className="code-explanation">
+    //         <p><code id="orange">isBigEnough</code> = The name of the function that contains the "test".</p>
+    //         <p><code id="pink">(x = x >= 10)</code> = This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. If an item is (in this case) bigger or equal to 10, then that item has passed the test. The <code>.find()</code> method returns only the first value it finds.</p>
+    //         <p><code id="green">[1, 4, 19, -1, 14]</code> = The array we want to check.</p>
+    //         <p><code id="red">.find()</code> = The method we use in order to get the value of the first item in the array that passed the test.</p>
+    //       </div>
+    //     </div>
+    //   </div>
+    // )
   },
   {
     id: 8,
@@ -195,7 +195,7 @@ const METHODS = [
     dataType: "array",
     image: "https://image.ibb.co/ngoYoa/Screen_Shot_2017_09_08_at_11_27_24.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach",
-    hash: "eGOeRO"
+    hash: "eGOeRO",
   },
   {
     id: 9,

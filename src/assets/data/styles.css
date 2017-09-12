@@ -4,7 +4,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
+
 
 #explanation-text {
   margin-top: 1em;
@@ -19,7 +22,10 @@ p {
   border-top: 1px solid rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   padding: 1em;
-  width: 9em;
+}
+
+.code-explanation p {
+  margin: 1em;
 }
 
 #red {
@@ -28,4 +34,16 @@ p {
 
 #pink {
   color: #EB5B98;
+}
+
+#orange {
+  color: #ff9900;
+}
+
+#lightpurple {
+  color: #9999ff;
+}
+
+#green {
+  color: #84e184;
 }

@@ -93,14 +93,16 @@ td {
 
 @media screen and (max-width: 850px) {
   .warning-text {
-    color: white;
+    color: red;
     background-color: black;
-    height: 3em;
+    height: 5em;
     width: 100vw;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
+    text-align: center;
   }
 }

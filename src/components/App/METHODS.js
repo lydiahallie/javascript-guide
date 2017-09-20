@@ -6,7 +6,7 @@ const METHODS = [
     id: 1,
     name: ".charAt()",
     description: "Returns the character at the specified index (position)",
-    goal: "Find",
+    goal: "find",
     dataType: "string",
     image: "https://image.ibb.co/mF8pBv/Screen_Shot_2017_09_07_at_20_41_28.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt",
@@ -15,9 +15,17 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.charAt()</code> method returns the character at the index that is equal to the value of your argument. The argument is the number that is passed inbetween the parentheses.</p>
          <div className="code-example">
-          <p id="code"><code><span id="red">.charAt</span>(<span id="pink">4</span>)</code></p>
+          <div id="code">
+            <code>
+              <span id="orange">"Hello World"</span><span id="red">.charAt</span>(<span id="pink">4</span>)
+            </code>
+          </div>
           <div className="code-explanation">
             <table>
+              <tr>
+                <th><code id="orange">"Hello World"</code></th>
+                <td>The string we want to check.</td>
+              </tr>
               <tr>
                 <th><code id="red">.charAt()</code></th>
                 <td> The method we use in order to find the right index.</td>
@@ -43,7 +51,9 @@ const METHODS = [
     hash: "MEgEVq",
     explanation: (
       <div className="explanation">
-        <p id="explanation-text">The <code>.concat()</code> method concatenates two arrays. It returns a new array, it doesn't modify the original arrays.</p>
+        <p id="explanation-text">
+          The <code>.concat()</code> method concatenates two arrays. It returns a new array, it doesn't modify the original arrays.
+        </p>
         <div className="code-example">
             <p><code>let <span id="orange">arr1</span> = [<span id="pink">'Hello'</span>];</code></p>
             <p><code>let <span id="lightpurple">arr2</span> = [<span id="pink">'World'</span>];</code></p>
@@ -78,17 +88,19 @@ const METHODS = [
     description: "checks if every element in an array passes a test",
     goal: "check",
     dataType: "array",
-    image: "https://image.ibb.co/jsk0jF/Screen_Shot_2017_09_07_at_20_33_44.png",
+    image: "https://image.ibb.co/f44y3k/Screen_Shot_2017_09_20_at_17_35_08_1.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every",
     hash: "wrwqrv",
     explanation: (
       <div className="explanation">
-        <p id="explanation-text">The <code>.every()</code> method checks if every element in an array passes a test. The test is a function that you create yourself.</p>
+        <p id="explanation-text">
+          The <code>.every()</code> method checks if every element in an array passes a test. The test is a function that you create yourself.
+        </p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code>const <span id="orange">testValue</span> = (<span id="pink">x => x >= 10</span>);</code></p>
             <p><code><span id="green">[2, 4, 9, 10, 20]</span><span id="red">.every</span>(<span id="orange">testValue</span>);</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -119,17 +131,17 @@ const METHODS = [
     description: "Fill the elements in an array with a static value.",
     goal: "change",
     dataType: "array",
-    image: "https://image.ibb.co/khzPda/Screen_Shot_2017_09_07_at_20_37_18.png",
+    image: "https://image.ibb.co/f95MOk/Screen_Shot_2017_09_20_at_17_38_52.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill",
     hash: "YrKrBW",
     explanation: (
       <div className="explanation">
         <p id="explanation-text">The <code>.every()</code> method checks if every element in an array passes a test. The test is a function that you create yourself.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code>let <span id="orange">numbers</span> = <span id="pink">[1, 2, 3]</span>;</code></p>
             <p><code><span id="orange">numbers</span><span id="red">.fill</span>(<span id="lightpurple">3</span>);</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -160,17 +172,17 @@ const METHODS = [
     description: "Creates a new array with every element in an array that pass a test.",
     goal: "find",
     dataType: "array",
-    image: "https://image.ibb.co/dpaA1v/Screen_Shot_2017_09_08_at_11_04_42.png",
+    image: "https://image.ibb.co/j2e4b5/Screen_Shot_2017_09_20_at_17_40_08.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter",
     hash: "yzBzrQ",
     explanation: (
       <div className="explanation">
         <p id="explanation-text">The <code>.filter()</code> method checks if an element passes a test, and adds that item to a new array.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code>const <span id="orange">isBigEnough</span> = (<span id="pink">x => x >= 10</span>);</code></p>
             <p><code><span id="green">[1, 4, 19, -1, 14]</span><span id="red">.filter</span>(<span id="orange">isBigEnough</span>);</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -201,17 +213,17 @@ const METHODS = [
     description: "Returns the value of the first element in an array that pass a test.",
     goal: "find",
     dataType: "array",
-    image: "https://image.ibb.co/grK3Mv/Screen_Shot_2017_09_08_at_11_07_55.png",
+    image: "https://image.ibb.co/b97FG5/Screen_Shot_2017_09_20_at_17_40_51.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find",
     hash: "MEgOKR",
     explanation: (
       <div className="explanation">
         <p id="explanation-text">The <code>.find()</code> method checks if an element passes a test, and returns the value of the first item that passed the test.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code>const <span id="orange">isBigEnough</span> = (<span id="pink">x => x >= 10</span>);</code></p>
             <p><code><span id="green">[1, 4, 19, -1, 14]</span><span id="red">.find</span>(<span id="orange">isBigEnough</span>);</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -242,17 +254,17 @@ const METHODS = [
     description: "Returns the index of the first element in an array that pass a test.",
     goal: "check",
     dataType: "array",
-    image:"https://image.ibb.co/hDs9Ta/Screen_Shot_2017_09_08_at_11_22_03.png",
+    image:"https://image.ibb.co/da02w5/Screen_Shot_2017_09_20_at_17_59_14.png",
     URL:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex",
     hash: "pWzdeB",
     explanation: (
       <div className="explanation">
         <p id="explanation-text">The <code>.findIndex()</code> method returns the index of the first element in an array that pass a test.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code>const <span id="orange">isBigEnough</span> = (<span id="pink">x => x >= 10</span>);</code></p>
             <p><code><span id="green">[1, 4, 19, -1, 14]</span><span id="red">.findIndex</span>(<span id="orange">isBigEnough</span>);</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -283,17 +295,17 @@ const METHODS = [
     description: "Calls a function for each array element.",
     goal: "change",
     dataType: "array",
-    image: "https://image.ibb.co/ngoYoa/Screen_Shot_2017_09_08_at_11_27_24.png",
+    image: "https://image.ibb.co/eET5G5/Screen_Shot_2017_09_20_at_18_02_05.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach",
     hash: "eGOeRO",
     explanation: (
       <div className="explanation">
         <p id="explanation-text">The <code>.forEach()</code> calls a function for every item in the array.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code>let <span id="orange">arr</span> = [<span id="pink">'Hello', 'World'</span>];</code></p>
             <p><code><span id="orange">arr</span><span id="red">.forEach</span>(<span id="orange">x => console.log(x)</span>);</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -324,17 +336,17 @@ const METHODS = [
     description: "Search the array for an element and returns its position.",
     goal: "check",
     dataType: "array",
-    image: "https://image.ibb.co/ifQ2gv/Screen_Shot_2017_09_08_at_11_46_54.png",
+    image: "https://image.ibb.co/hmBsw5/Screen_Shot_2017_09_20_at_18_05_04.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf",
     hash: "WZeXZL",
     explanation: (
       <div className="explanation">
         <p id="explanation-text">The <code>.indexOf()</code> method returns the index of the character given as argument.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code>let <span id="orange">arr</span> = [<span id="pink">'Green', 'Blue', 'Yellow', 'Orange'</span>];</code></p>
             <p><code><span id="orange">arr</span><span id="red">.indexOf</span>(<span id="lightpurple">'Blue'</span>);</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -372,9 +384,9 @@ const METHODS = [
       <div className="explanation">
         <p id="explanation-text">The <code>.isArray()</code> checks whether its argument is an array.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code><span id="orange">Array</span>.<span id="red">isArray</span>(<span id="pink">[1]</span>)</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -412,9 +424,9 @@ const METHODS = [
       <div className="explanation">
         <p id="explanation-text">The <code>.join()</code> joins all elements of an array in a string.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code><span id="orange">['Dog', 'Fox', 'Ocelot']</span>.<span id="red">join</span>(<span id="pink">' '</span>)</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -448,10 +460,10 @@ const METHODS = [
       <div className="explanation">
         <p id="explanation-text">The <code>.join()</code> joins all elements of an array in a string.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code>let <span id="orange">numbers</span> = <span id="pink">[7, 2, 3, 2]</span>;</code></p>
             <p><code><span id="orange">numbers</span><span id="red">.lastIndexOf</span><span id="lightpurple">(2)</span></code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -482,16 +494,16 @@ const METHODS = [
     description: "Creates a new array with the result of calling a function for each array element.",
     goal: "change",
     dataType: "array",
-    image: "https://image.ibb.co/dd9xjF/Screen_Shot_2017_09_10_at_14_00_02.png",
+    image: "https://image.ibb.co/iqqKb5/Screen_Shot_2017_09_20_at_18_07_42.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map",
     hash: "VMZXwK",
     explanation: (
       <div className="explanation">
         <p id="explanation-text">The <code>.map()</code> method creates a new array with the result of calling a function for each array element.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code><span id="orange">[1, 2, 3]</span>.<span id="red">map</span><span id="pink">(number =>(number*2))</span>;</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -525,9 +537,9 @@ const METHODS = [
       <div className="explanation">
         <p id="explanation-text">The <code>.pop()</code> method removes the last element of the array, and returns that element.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code><span id="orange">[4, 5, 6, 7, 5]</span>.<span id="red">pop()</span>;</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -557,11 +569,11 @@ const METHODS = [
       <div className="explanation">
         <p id="explanation-text">The <code>.push()</code> adds new elements to the end of an array, and returns the new length. If you add console.log(), it will return the new array.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code>let <span id="orange">numbers</span> = <span id="pink">[1, 2, 3]</span>;</code></p>
             <p><code><span id="orange">numbers</span>.<span id="red">push</span>(<span id="lightpurple">4</span>);</code></p>
             <p><code>console.log(<span id="orange">numbers</span>);</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -599,10 +611,10 @@ const METHODS = [
       <div className="explanation">
         <p id="explanation-text">The <code>.reduce()</code> method reduces the values of an array to a single value (going left-to-right).</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code>let <span id="orange">numbers</span> = <span id="pink">[1, 2, 3]</span>;</code></p>
             <p><code><span id="orange">numbers</span>.<span id="red">reduce((previous, current)</span> => <span id="lightpurple">(previous + current)</span><span id="red">)</span>;</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -629,16 +641,16 @@ const METHODS = [
     description: "Reverses the order of the elements in an array.",
     goal: "change",
     dataType: "array",
-    image: "https://image.ibb.co/mLgwBv/Screen_Shot_2017_09_10_at_15_55_47.png",
+    image: "https://image.ibb.co/d4XCUQ/Screen_Shot_2017_09_20_at_17_32_32.png",
     URL: "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse",
     hash: "eGOMzw",
     explanation: (
       <div className="explanation">
         <p id="explanation-text">The <code>.reverse()</code> method returns the array reversed</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code><span id="orange">['USA', 'Canada', 'France', 'Germany']</span>.<span id="red">reverse()</span>;</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -668,9 +680,9 @@ const METHODS = [
       <div className="explanation">
         <p id="explanation-text">The <code>.shift()</code> method returns the first element of the array.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code><span id="orange">[1, 2, 3, 4]</span>.<span id="red">shift()</span>;</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -693,16 +705,16 @@ const METHODS = [
     description: "Selects a part of an array, and returns the new array",
     goal: "change",
     dataType: "array",
-    image: "https://image.ibb.co/n5dPgv/Screen_Shot_2017_09_10_at_17_44_02.png",
+    image: "https://image.ibb.co/g3OBpQ/Screen_Shot_2017_09_20_at_17_31_13.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice",
     hash: "pWzLPB",
     explanation: (
       <div className="explanation">
         <p id="explanation-text">The <code>.slice()</code> method selects a part of an array, and returns this part as new array.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code><span id="orange">['apple', 'banana', 'mango', 'lemon']</span>.<span id="red">slice</span>(<span id="green">0, 2</span>);</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -736,9 +748,9 @@ const METHODS = [
       <div className="explanation">
         <p id="explanation-text">The <code>.some()</code> checks if any of the elements in an array passes a test.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code><span id="orange">[10, 30, 45, 20, 40]</span>.<span id="red">some</span>(<span id="lightpurple">x => x > 50</span>);</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -772,9 +784,9 @@ const METHODS = [
       <div className="explanation">
         <p id="explanation-text">The <code>.sort()</code> method sorts the array alphabetically and numerically.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code><span id="orange">[10, 30, 45, 20, 40]</span>.<span id="red">sort()</span>;</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -804,9 +816,9 @@ const METHODS = [
       <div className="explanation">
         <p id="explanation-text">The <code>.splice()</code> adds and/or removes elements frmo an array.</p>
         <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code><span id="orange">[10, 30, 45, 20, 40]</span>.<span id="red">sort()</span>;</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -836,8 +848,9 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.toString()</code> method converts an array into a string.</p>
          <div className="code-example">
-          <p id="code">
-            <code><span id="pink">['Hello',  'World']</span><span id="red">.toString();</span></code></p>
+          <div id="code">
+            <code><span id="pink">['Hello',  'World']</span><span id="red">.toString();</span></code>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -867,11 +880,11 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.unshift()</code> method adds a new element to the beginning of the array. It's the opposite of the <code>.shift()</code> method</p>
          <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code>let <span id="orange">numbers</span> = <span id="pink">[1, 2, 3, 4, 5]</span>;</code></p>
             <p><code><span id="orange">numbers</span>.<span id="red">unshift(<span id="lightpurple">9</span>)</span>;</code></p>
             <p><code>console.log(<span id="orange">numbers</span>)</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -913,9 +926,9 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.concat()</code> joins two or more strings, and returns the new string.</p>
          <div className="code-example">
-          <p id="code">
+          <div id="code">
             <p><code><span id="orange">'Hello'</span>.<span id="red">concat</span>('<span id="pink">World</span>')</code></p>
-          </p>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -942,15 +955,16 @@ const METHODS = [
     description: "Checks whether a string ends with specified string/characters",
     goal: "check",
     dataType: "string",
-    image: "https://image.ibb.co/bUuVMv/Screen_Shot_2017_09_10_at_18_22_27.png",
+    image: "https://image.ibb.co/jzraG5/Screen_Shot_2017_09_20_at_18_10_24.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith",
     hash: "NaKYOJ",
     explanation: (
       <div className="explanation">
         <p>The <code>.endsWith()</code> method checks whether a string ends with the word or characters given in its argument.</p>
          <div className="code-example">
-          <p id="code">
-            <code><span id="pink">"Dogs are cute"</span>.<span id="red">endsWith(<span id="orange">"cute"</span>)</span>;</code></p>
+          <div id="code">
+            <code><span id="pink">"Dogs are cute"</span>.<span id="red">endsWith(<span id="orange">"cute"</span>)</span>;</code>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -984,8 +998,9 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.includes()</code> method checks whether a string includes the word or characters given in its argument.</p>
          <div className="code-example">
-          <p id="code">
-            <code><span id="pink">"Dogs are cute"</span>.<span id="red">includes(<span id="orange">"cute"</span>)</span>;</code></p>
+          <div id="code">
+            <code><span id="pink">"Dogs are cute"</span>.<span id="red">includes(<span id="orange">"cute"</span>)</span>;</code>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -1019,8 +1034,9 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.repeat()</code> method checks repeats a string the amount of times that's specified in its argument</p>
          <div className="code-example">
-          <p id="code">
-            <code>"<span id="pink">Hello</span>".<span id="red">repeat(<span id="orange">2</span>)</span>;</code></p>
+          <div id="code">
+            <code>"<span id="pink">Hello</span>".<span id="red">repeat(<span id="orange">2</span>)</span>;</code>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -1054,8 +1070,9 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.replace()</code> method replaces specified value in the string, and returns a new string where the specified value is replaced.</p>
          <div className="code-example">
-          <p id="code">
-            <code><span id="pink">"Dogs are cute"</span>.<span id="red">replace</span>(<span id="orange">"cute"</span>, <span id="green">"adorable"</span>);</code></p>
+          <div id="code">
+            <code><span id="pink">"Dogs are cute"</span>.<span id="red">replace</span>(<span id="orange">"cute"</span>, <span id="green">"adorable"</span>);</code>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -1093,8 +1110,9 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.slice()</code> method extracts a part of a string and returns a new string.</p>
          <div className="code-example">
-          <p id="code">
-            <code><span id="pink">"Hello World"</span>.<span id="red">slice</span>(<span id="orange">1</span>, <span id="green">5</span>);</code></p>
+          <div id="code">
+            <code><span id="pink">"Hello World"</span>.<span id="red">slice</span>(<span id="orange">1</span>, <span id="green">5</span>);</code>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -1132,8 +1150,9 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.split()</code> method splits a string into an array or substring.</p>
          <div className="code-example">
-          <p id="code">
-            <code><span id="pink">'Hello World'</span>.<span id="red">split(' ')</span>;</code></p>
+          <div id="code">
+            <code><span id="pink">'Hello World'</span>.<span id="red">split(' ')</span>;</code>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -1163,8 +1182,9 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.startsWith()</code> method checks whether a string begins with the word or characters given in its argument.</p>
          <div className="code-example">
-          <p id="code">
-            <code><span id="pink">"Dogs are cute"</span>.<span id="red">startsWith(<span id="orange">"Dogs"</span>)</span>;</code></p>
+          <div id="code">
+            <code><span id="pink">"Dogs are cute"</span>.<span id="red">startsWith(<span id="orange">"Dogs"</span>)</span>;</code>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -1198,8 +1218,9 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.substr()</code> returns the characters from a string, beginning at a specified start position, and has a specified length</p>
          <div className="code-example">
-           <p id="code">
-             <code><span id="pink">"Hello World"</span>.<span id="red">substr</span>(<span id="orange">1</span>, <span id="green">4</span>);</code></p>
+           <div id="code">
+             <code><span id="pink">"Hello World"</span>.<span id="red">substr</span>(<span id="orange">1</span>, <span id="green">4</span>);</code>
+           </div>
            <div className="code-explanation">
              <table>
                <tr>
@@ -1237,8 +1258,9 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.substring()</code> returns the characters from a string between two specified indices.</p>
          <div className="code-example">
-           <p id="code">
-             <code><span id="pink">"Hello World"</span>.<span id="red">substring</span>(<span id="orange">1</span>, <span id="green">4</span>);</code></p>
+           <div id="code">
+             <code><span id="pink">"Hello World"</span>.<span id="red">substring</span>(<span id="orange">1</span>, <span id="green">4</span>);</code>
+           </div>
            <div className="code-explanation">
              <table>
                <tr>
@@ -1276,8 +1298,9 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.toLowerCase()</code> method converts a string to lowercase letters.</p>
          <div className="code-example">
-          <p id="code">
-            <code><span id="pink">"Hello World"</span>.<span id="red">.toLowerCase();</span>;</code></p>
+          <div id="code">
+            <code><span id="pink">"Hello World"</span>.<span id="red">.toLowerCase();</span>;</code>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -1307,8 +1330,9 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.toUpperCase()</code> method converts a string to uppercase letters.</p>
          <div className="code-example">
-          <p id="code">
-            <code><span id="pink">"Hello World"</span>.<span id="red">.toUpperCase();</span>;</code></p>
+          <div id="code">
+            <code><span id="pink">"Hello World"</span>.<span id="red">.toUpperCase();</span>;</code>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -1338,8 +1362,9 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.trim()</code> method removes whitespace from both ends of  a string.</p>
          <div className="code-example">
-          <p id="code">
-            <code><span id="pink">'       Hello World      '</span>.<span id="red">trim()</span>;</code></p>
+          <div id="code">
+            <code><span id="pink">'       Hello World      '</span>.<span id="red">trim()</span>;</code>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>
@@ -1369,8 +1394,9 @@ const METHODS = [
       <div className="explanation">
         <p>The <code>.indexOf()</code> method method returns the position of the first found occurrence of a specific character in a string.</p>
          <div className="code-example">
-          <p id="code">
-            <code><span id="pink">'Hello World'</span>.<span id="red">indexOf(</span>'<span id="lightpurple">Hello</span>')';</code></p>
+          <div id="code">
+            <code><span id="pink">'Hello World'</span>.<span id="red">indexOf(</span>'<span id="lightpurple">Hello</span>')';</code>
+          </div>
           <div className="code-explanation">
             <table>
               <tr>

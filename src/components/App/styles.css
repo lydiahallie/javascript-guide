@@ -55,6 +55,7 @@ th {
   background-color: rgba(0, 0, 0, 0.4);
   padding: .5em;
   width: 30%;
+  font-weight: normal;
 }
 
 td {
@@ -69,5 +70,5 @@ td {
 }
 
 .show-method p {
-  
+
 }

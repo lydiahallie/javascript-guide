@@ -1,6 +1,8 @@
 .results-wrapper, .results, .result, .method-details, .navbar {
   display: flex;
   align-items: center;
+  height: 100vh;
+  overflow: scroll;
 }
 
 .results-wrapper, .result, .method-details, .navbar {
@@ -13,8 +15,7 @@
 
 .results {
   flex-wrap: wrap;
-  margin-left: 15vw;
-  width: 85vw;
+  overflow-x: hide;
 }
 
 .result {
@@ -25,6 +26,10 @@
   justify-content: space-around;
   margin: 1em;
   width: 35em;
+}
+
+.results-wrapper {
+  width: 85vw;
 }
 
 a, button, h2, h5, .method-details h1 {
@@ -66,7 +71,7 @@ p a {
   height: 100vh;
   overflow: scroll;
   position: fixed;
-  width: 14em;
+  width: 12em;
 }
 
 h4 {

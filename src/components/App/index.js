@@ -53,8 +53,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar filterMethods={this.filterMethods} />
-        <Results methods={this.state.filteredMethods} />
+        <div className="Navbar">
+          <Navbar filterMethods={this.filterMethods} />
+        </div>
+        <div className="results-app">
+          <Results methods={this.state.filteredMethods} />
+        </div>
         <Footer />
       </div>
     );

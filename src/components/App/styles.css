@@ -1,0 +1,69 @@
+div.explanation {
+  width: 65vw;
+  background-color:rgba(255, 255, 255, 0.1);
+  margin: 2em 0em;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+#red {
+  color: rgb(170, 16, 47);
+}
+
+#pink {
+  color: rgb(205, 104, 104);
+}
+
+#orange {
+  color: rgb(255, 135, 68);
+}
+
+#lightpurple {
+  color: rgb(126, 62, 80);
+}
+
+#green {
+  color: rgb(45, 184, 80);
+}
+
+div.explanation p {
+  margin: 1em 0;
+}
+
+div.code-example code {
+  font-size: 20px;
+}
+
+div.code-example p {
+  margin: 0;
+}
+
+div.code-explanation {
+  margin-top: 2em;
+}
+div.code-explanation code {
+  font-size: 20px;
+}
+
+.code-explanation {
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: .5em;
+  width: 30%;
+}
+
+td {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: .5em;
+  width: 70%;
+}
+
+.results-app {
+  width: 85vw;
+  margin-left: 15vw;
+}

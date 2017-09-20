@@ -1,4 +1,5 @@
-// import React from 'react';
+import React from 'react';
+import './styles.css';
 
 const METHODS = [
   {
@@ -10,18 +11,26 @@ const METHODS = [
     image: "https://image.ibb.co/mF8pBv/Screen_Shot_2017_09_07_at_20_41_28.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt",
     hash: "ZXzymb",
-    // explanation: (
-    //   <div className="explanation">
-    //     <p id="explanation-text">The <code>.charAt()</code> method returns the character at the index that is equal to the value of your argument. The argument is the number that is passed inbetween the parentheses.</p>
-    //     <div className="code-example">
-    //       <p id="code"><code><span id="red">.charAt</span>(<span id="pink">4</span>)</code></p>
-    //       <div className="code-explanation">
-    //         <p><code id="red">.charAt()</code> = The method we use in order to find the right index.</p>
-    //         <p><code id="pink">4</code> = The index of the character we want to have returned.</p>
-    //       </div>
-    //     </div>
-    //   </div>
-    // )
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.charAt()</code> method returns the character at the index that is equal to the value of your argument. The argument is the number that is passed inbetween the parentheses.</p>
+         <div className="code-example">
+          <p id="code"><code><span id="red">.charAt</span>(<span id="pink">4</span>)</code></p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="red">.charAt()</code></th>
+                <td> The method we use in order to find the right index.</td>
+              </tr>
+              <tr>
+                <th><code id="pink">4</code></th>
+                <td>The index of the character we want to have returned.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 2,
@@ -32,24 +41,36 @@ const METHODS = [
     image: "https://image.ibb.co/gKoajF/Screen_Shot_2017_09_08_at_12_55_09.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat?v=b",
     hash: "MEgEVq",
-    // explanation: (
-    //   <div className="explanation">
-    //     <p id="explanation-text">The <code>.concat()</code> method concatenates two arrays. It returns a new array, it doesn't modify the original arrays.</p>
-    //     <div className="code-example">
-    //       <p id="code">
-    //         <p><code>let <span id="orange">arr1</span> = [<span id="pink">'Hello'</span>];</code></p>
-    //         <p><code>let <span id="lightpurple">arr2</span> = [<span id="pink">'World'</span>];</code></p>
-    //         <p><code><span id="orange">arr1</span><span id="red">.concat(<span id="lightpurple">arr2</span>)</span> = <span id="green">['Hello', 'World']</span>;</code></p>
-    //       </p>
-    //       <div className="code-explanation">
-    //         <p><code id="red">.concat()</code> = The method we use in order to concatenate our arrays.</p>
-    //         <p><code id="orange">arr1</code> = Our first array, the value of this array will be the first value of our new array with the concatenated values.</p>
-    //         <p><code id="lightpurple">arr2</code> = Our second array, the value of this array will be the second value of our new array with the concatenated values.</p>
-    //         <p><code id="green">['Hello', 'World']</code> = Our new array which contains the values of the arrays we concatenated.</p>
-    //       </div>
-    //     </div>
-    //   </div>
-    // )
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.concat()</code> method concatenates two arrays. It returns a new array, it doesn't modify the original arrays.</p>
+        <div className="code-example">
+            <p><code>let <span id="orange">arr1</span> = [<span id="pink">'Hello'</span>];</code></p>
+            <p><code>let <span id="lightpurple">arr2</span> = [<span id="pink">'World'</span>];</code></p>
+            <p><code><span id="orange">arr1</span><span id="red">.concat(<span id="lightpurple">arr2</span>)</span> = <span id="green">['Hello', 'World']</span>;</code></p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="red">.concat()</code></th>
+                <td>The method we use in order to concatenate our arrays.</td>
+              </tr>
+              <tr>
+                <th><code id="orange">arr1</code></th>
+                <td>Our first array, the value of this array will be the first value of our new array with the concatenated values.</td>
+              </tr>
+              <tr>
+                <th><code id="lightpurple">arr2</code></th>
+                <td>Our second array, the value of this array will be the second value of our new array with the concatenated values.</td>
+              </tr>
+              <tr>
+                <th><code id="green">['Hello', 'World']</code></th>
+                <td>Our new array which contains the values of the arrays we concatenated.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 3,
@@ -60,23 +81,37 @@ const METHODS = [
     image: "https://image.ibb.co/jsk0jF/Screen_Shot_2017_09_07_at_20_33_44.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every",
     hash: "wrwqrv",
-    // explanation: (
-    //   <div className="explanation">
-    //     <p id="explanation-text">The <code>.every()</code> method checks if every element in an array passes a test. The test is a function that you create yourself.</p>
-    //     <div className="code-example">
-    //       <p id="code">
-    //         <p><code>const <span id="orange">testValue</span> = (<span id="pink">x => x >= 10</span>);</code></p>
-    //         <p><code><span id="green">[2, 4, 9, 10, 20]</span><span id="red">.every</span>(<span id="orange">testValue</span>);</code></p>
-    //       </p>
-    //       <div className="code-explanation">
-    //         <p><code id="orange">testValue</code> = The name of the function that contains the "test".</p>
-    //         <p><code id="pink">(x = x >= 10)</code> = This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. This basically says: check every single item, if every single item is (in this case) bigger or equal to 10, then return true.</p>
-    //         <p><code id="green">[2, 4, 9, 10, 20]</code> = The array we want to have checked.</p>
-    //         <p><code id="red">.every()</code> = The method we use in order to check whether every single item in the array returned true, thus passed our test.</p>
-    //       </div>
-    //     </div>
-    //   </div>
-    // )
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.every()</code> method checks if every element in an array passes a test. The test is a function that you create yourself.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code>const <span id="orange">testValue</span> = (<span id="pink">x => x >= 10</span>);</code></p>
+            <p><code><span id="green">[2, 4, 9, 10, 20]</span><span id="red">.every</span>(<span id="orange">testValue</span>);</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">testValue</code></th>
+                <td>The name of the function that contains the "test".</td>
+              </tr>
+              <tr>
+                <th><code id="pink">(x = x >= 10)</code></th>
+                <td>This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. This basically says: check every single item, if every single item is (in this case) bigger or equal to 10, then return true.</td>
+              </tr>
+              <tr>
+                <th><code id="green">[2, 4, 9, 10, 20]</code></th>
+                <td>The array we want to have checked.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.every()</code></th>
+                <td>The method we use in order to check whether every single item in the array returned true, thus passed our test.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 4,
@@ -87,23 +122,37 @@ const METHODS = [
     image: "https://image.ibb.co/khzPda/Screen_Shot_2017_09_07_at_20_37_18.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill",
     hash: "YrKrBW",
-    // explanation: (
-    //   <div className="explanation">
-    //     <p id="explanation-text">The <code>.every()</code> method checks if every element in an array passes a test. The test is a function that you create yourself.</p>
-    //     <div className="code-example">
-    //       <p id="code">
-    //         <p><code>let <span id="orange">numbers</span> = <span id="pink">[1, 2, 3]</span>;</code></p>
-    //         <p><code><span id="orange">numbers</span><span id="red">.fill</span>(<span id="lightpurple">3</span>);</code></p>
-    //       </p>
-    //       <div className="code-explanation">
-    //         <p><code id="orange">numbers</code> = The name of our array that we want to change.</p>
-    //         <p><code id="pink">[1, 2, 3]</code> = The array that we want to change</p>
-    //         <p><code id="red">.fill()</code> = The method we use in order to fill every value in the array with the value that we pass as argument.</p>
-    //         <p><code id="lightpurple">3</code> = The value that we want every single item in the array to have.</p>
-    //       </div>
-    //     </div>
-    //   </div>
-    // )
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.every()</code> method checks if every element in an array passes a test. The test is a function that you create yourself.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code>let <span id="orange">numbers</span> = <span id="pink">[1, 2, 3]</span>;</code></p>
+            <p><code><span id="orange">numbers</span><span id="red">.fill</span>(<span id="lightpurple">3</span>);</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">numbers</code></th>
+                <td>The name of our array that we want to change.</td>
+              </tr>
+              <tr>
+                <th><code id="pink">[1, 2, 3]</code></th>
+                <td>The array that we want to change</td>
+              </tr>
+              <tr>
+                <th><code id="red">.fill()</code></th>
+                <td>The method we use in order to fill every value in the array with the value that we pass as argument.</td>
+              </tr>
+              <tr>
+                <th><code id="lightpurple">3</code></th>
+                <td>The value that we want every single item in the array to have.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 5,
@@ -114,23 +163,37 @@ const METHODS = [
     image: "https://image.ibb.co/dpaA1v/Screen_Shot_2017_09_08_at_11_04_42.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter",
     hash: "yzBzrQ",
-    // explanation: (
-    //   <div className="explanation">
-    //     <p id="explanation-text">The <code>.filter()</code> method checks if an element passes a test, and adds that item to a new array.</p>
-    //     <div className="code-example">
-    //       <p id="code">
-    //         <p><code>const <span id="orange">isBigEnough</span> = (<span id="pink">x => x >= 10</span>);</code></p>
-    //         <p><code><span id="green">[1, 4, 19, -1, 14]</span><span id="red">.filter</span>(<span id="orange">isBigEnough</span>);</code></p>
-    //       </p>
-    //       <div className="code-explanation">
-    //         <p><code id="orange">isBigEnough</code> = The name of the function that contains the "test".</p>
-    //         <p><code id="pink">(x = x >= 10)</code> = This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. This basically says: check every single item, if an item is (in this case) bigger or equal to 10, then the item has passed the test</p>
-    //         <p><code id="green">[1, 4, 19, -1, 14]</code> = The array we want to filter through.</p>
-    //         <p><code id="red">.filter()</code> = The method we use in order to add the items that passed our "test" to a new array.</p>
-    //       </div>
-    //     </div>
-    //   </div>
-    // )
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.filter()</code> method checks if an element passes a test, and adds that item to a new array.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code>const <span id="orange">isBigEnough</span> = (<span id="pink">x => x >= 10</span>);</code></p>
+            <p><code><span id="green">[1, 4, 19, -1, 14]</span><span id="red">.filter</span>(<span id="orange">isBigEnough</span>);</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">isBigEnough</code></th>
+                <td>The name of the function that contains the "test".</td>
+              </tr>
+              <tr>
+                <th><code id="pink">(x = x >= 10)</code></th>
+                <td>This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. This basically says: check every single item, if an item is (in this case) bigger or equal to 10, then the item has passed the test</td>
+              </tr>
+              <tr>
+                <th><code id="green">[1, 4, 19, -1, 14]</code></th>
+                <td>The array we want to filter through.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.filter()</code></th>
+                <td>The method we use in order to add the items that passed our "test" to a new array.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 6,
@@ -141,50 +204,78 @@ const METHODS = [
     image: "https://image.ibb.co/grK3Mv/Screen_Shot_2017_09_08_at_11_07_55.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find",
     hash: "MEgOKR",
-    // explanation: (
-    //   <div className="explanation">
-    //     <p id="explanation-text">The <code>.find()</code> method checks if an element passes a test, and returns the value of the first item that passed the test.</p>
-    //     <div className="code-example">
-    //       <p id="code">
-    //         <p><code>const <span id="orange">isBigEnough</span> = (<span id="pink">x => x >= 10</span>);</code></p>
-    //         <p><code><span id="green">[1, 4, 19, -1, 14]</span><span id="red">.find</span>(<span id="orange">isBigEnough</span>);</code></p>
-    //       </p>
-    //       <div className="code-explanation">
-    //         <p><code id="orange">isBigEnough</code> = The name of the function that contains the "test".</p>
-    //         <p><code id="pink">(x = x >= 10)</code> = This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. If an item is (in this case) bigger or equal to 10, then that item has passed the test. The <code>.find()</code> method returns only the first value it finds.</p>
-    //         <p><code id="green">[1, 4, 19, -1, 14]</code> = The array we want to check.</p>
-    //         <p><code id="red">.find()</code> = The method we use in order to get the value of the first item in the array that passed the test.</p>
-    //       </div>
-    //     </div>
-    //   </div>
-    // )
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.find()</code> method checks if an element passes a test, and returns the value of the first item that passed the test.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code>const <span id="orange">isBigEnough</span> = (<span id="pink">x => x >= 10</span>);</code></p>
+            <p><code><span id="green">[1, 4, 19, -1, 14]</span><span id="red">.find</span>(<span id="orange">isBigEnough</span>);</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">isBigEnough</code></th>
+                <td>The name of the function that contains the "test".</td>
+              </tr>
+              <tr>
+                <th><code id="pink">(x = x >= 10)</code></th>
+                <td>This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. If an item is (in this case) bigger or equal to 10, then that item has passed the test. The <code>.find()</code> method returns only the first value it finds.</td>
+              </tr>
+              <tr>
+                <th><code id="green">[1, 4, 19, -1, 14]</code></th>
+                <td>The array we want to check.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.find()</code></th>
+                <td>The method we use in order to get the value of the first item in the array that passed the test.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 7,
     name: ".findIndex()",
     description: "Returns the index of the first element in an array that pass a test.",
-    goal: "find",
+    goal: "check",
     dataType: "array",
     image:"https://image.ibb.co/hDs9Ta/Screen_Shot_2017_09_08_at_11_22_03.png",
     URL:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex",
     hash: "pWzdeB",
-    // explanation: (
-    //   <div className="explanation">
-    //     <p id="explanation-text">The <code>.findIndex()</code> method returns the index of the first element in an array that pass a test.</p>
-    //     <div className="code-example">
-    //       <p id="code">
-    //         <p><code>const <span id="orange">isBigEnough</span> = (<span id="pink">x => x >= 10</span>);</code></p>
-    //         <p><code><span id="green">[1, 4, 19, -1, 14]</span><span id="red">.filter</span>(<span id="orange">isBigEnough</span>);</code></p>
-    //       </p>
-    //       <div className="code-explanation">
-    //         <p><code id="orange">isBigEnough</code> = The name of the function that contains the "test".</p>
-    //         <p><code id="pink">(x = x >= 10)</code> = This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. If an item is (in this case) bigger or equal to 10, then that item has passed the test. The <code>.find()</code> method returns only the first value it finds.</p>
-    //         <p><code id="green">[1, 4, 19, -1, 14]</code> = The array we want to check.</p>
-    //         <p><code id="red">.find()</code> = The method we use in order to get the value of the first item in the array that passed the test.</p>
-    //       </div>
-    //     </div>
-    //   </div>
-    // )
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.findIndex()</code> method returns the index of the first element in an array that pass a test.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code>const <span id="orange">isBigEnough</span> = (<span id="pink">x => x >= 10</span>);</code></p>
+            <p><code><span id="green">[1, 4, 19, -1, 14]</span><span id="red">.findIndex</span>(<span id="orange">isBigEnough</span>);</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">isBigEnough</code></th>
+                <td>The name of the function that contains the "test".</td>
+              </tr>
+              <tr>
+                <th><code id="pink">(x = x >= 10)</code></th>
+                <td>This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. If an item is (in this case) bigger or equal to 10, then that item has passed the test. The <code>.find()</code> method returns only the first value it finds.</td>
+              </tr>
+              <tr>
+                <th><code id="green">[1, 4, 19, -1, 14]</code></th>
+                <td>The array we want to check.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.findIndex()</code></th>
+                <td>The method we use in order to get the value of the first item in the array that passed the test.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 8,
@@ -195,16 +286,78 @@ const METHODS = [
     image: "https://image.ibb.co/ngoYoa/Screen_Shot_2017_09_08_at_11_27_24.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach",
     hash: "eGOeRO",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.forEach()</code> calls a function for every item in the array.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code>let <span id="orange">arr</span> = [<span id="pink">'Hello', 'World'</span>];</code></p>
+            <p><code><span id="orange">arr</span><span id="red">.forEach</span>(<span id="orange">x => console.log(x)</span>);</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">arr</code></th>
+                <td>The name of the array we want to iterate (loop) over.</td>
+              </tr>
+              <tr>
+                <th><code id="pink">['Hello', 'World']</code></th>
+                <td>This is our "test". The x stands for every single item in the array. You can call x anything you want, but both the first and the second x in our function need to have the same name. If an item is (in this case) bigger or equal to 10, then that item has passed the test. The <code>.find()</code> method returns only the first value it finds.</td>
+              </tr>
+              <tr>
+                <th><code id="green">[1, 4, 19, -1, 14]</code></th>
+                <td>The array we want to check.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.findIndex()</code></th>
+                <td>The method we use in order to get the value of the first item in the array that passed the test.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 9,
     name: ".indexOf()",
     description: "Search the array for an element and returns its position.",
-    goal: "find",
+    goal: "check",
     dataType: "array",
     image: "https://image.ibb.co/ifQ2gv/Screen_Shot_2017_09_08_at_11_46_54.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf",
-    hash: "WZeXZL"
+    hash: "WZeXZL",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.indexOf()</code> method returns the index of the character given as argument.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code>let <span id="orange">arr</span> = [<span id="pink">'Green', 'Blue', 'Yellow', 'Orange'</span>];</code></p>
+            <p><code><span id="orange">arr</span><span id="red">.indexOf</span>(<span id="lightpurple">'Blue'</span>);</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">arr</code></th>
+                <td>The name of the array we want to get a value from.</td>
+              </tr>
+              <tr>
+                <th><code id="pink">['Green', 'Blue', 'Yellow', 'Orange']</code></th>
+                <td>The array we want to get a value from.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.indexOf()</code></th>
+                <td>The method we use in order to get the index of the given value.</td>
+              </tr>
+              <tr>
+                <th><code id="lightpurple">'Blue'</code></th>
+                <td>The value from which we want to have the index returned.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 10,
@@ -214,7 +367,37 @@ const METHODS = [
     dataType: "other",
     image:"https://image.ibb.co/ekOEda/Screen_Shot_2017_09_08_at_12_03_08.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray",
-    hash: "MEgQxz"
+    hash: "MEgQxz",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.isArray()</code> checks whether its argument is an array.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code><span id="orange">Array</span>.<span id="red">isArray</span>(<span id="pink">[1]</span>)</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">Array</code></th>
+                <td>The standard syntax, always type Array. before the method.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.isArray()</code></th>
+                <td>The method we use in order to check whether its argument is an array.</td>
+              </tr>
+              <tr>
+                <th><code id="pink">[1]</code></th>
+                <td>The argument that's passed </td>
+              </tr>
+              <tr>
+                <th><code id="lightpurple">'Blue'</code></th>
+                <td>The value from which we want to have the index returned.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 11,
@@ -224,7 +407,33 @@ const METHODS = [
     dataType: "array",
     image: "https://image.ibb.co/fH0Kda/Screen_Shot_2017_09_08_at_13_59_38.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join",
-    hash: "QqLQXx"
+    hash: "QqLQXx",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.join()</code> joins all elements of an array in a string.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code><span id="orange">['Dog', 'Fox', 'Ocelot']</span>.<span id="red">join</span>(<span id="pink">' '</span>)</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">['Dog', 'Fox', 'Ocelot']</code></th>
+                <td>The array from which we want the values to be joined in a string.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.join()</code></th>
+                <td>The method we use in order to join the values.</td>
+              </tr>
+              <tr>
+                <th><code id="pink">(' ')</code></th>
+                <td>The default seperator, so when you write .join() is a comma. However, if you want a space instead, you'd write (' '). Same goes for any other character.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 12,
@@ -234,7 +443,38 @@ const METHODS = [
     dataType: "array",
     image: "https://image.ibb.co/ju3WTa/Screen_Shot_2017_09_10_at_13_54_24.png",
     URL:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf",
-    hash: "PJYQMK"
+    hash: "PJYQMK",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.join()</code> joins all elements of an array in a string.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code>let <span id="orange">numbers</span> = <span id="pink">[7, 2, 3, 2]</span>;</code></p>
+            <p><code><span id="orange">numbers</span><span id="red">.lastIndexOf</span><span id="lightpurple">(2)</span></code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">numbers</code></th>
+                <td>The name of the array</td>
+              </tr>
+              <tr>
+                <th><code id="pink">[7, 2, 3, 2]</code></th>
+                <td>The array with values from which we want to check the index.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.lastIndexOf()</code></th>
+                <td>The method we use in order to find the index of the last value that's equal to the value in the argument.</td>
+              </tr>
+              <tr>
+                <th><code id="lightpurple">(2)</code></th>
+                <td>The value from which we want to get the last index returned.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 13,
@@ -244,7 +484,33 @@ const METHODS = [
     dataType: "array",
     image: "https://image.ibb.co/dd9xjF/Screen_Shot_2017_09_10_at_14_00_02.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map",
-    hash: "VMZXwK"
+    hash: "VMZXwK",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.map()</code> method creates a new array with the result of calling a function for each array element.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code><span id="orange">[1, 2, 3]</span>.<span id="red">map</span><span id="pink">(number =>(number*2))</span>;</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">[1, 2, 3]</code></th>
+                <td>The array we want to map over</td>
+              </tr>
+              <tr>
+                <th><code id="red">.map()</code></th>
+                <td>The method we use in order to create a new array after a function has been called for every item in the array.</td>
+              </tr>
+              <tr>
+                <th><code id="pink">(number => (number*2))</code></th>
+                <td>The function that will be executed for each single item in the array. Each item is now called "number", so we say: get "number", then return number * 2, and push that result in a new array.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 14,
@@ -254,7 +520,29 @@ const METHODS = [
     dataType: "array",
     image: "https://image.ibb.co/c0MtPF/Screen_Shot_2017_09_10_at_14_01_59.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop",
-    hash: "gGYeaG"
+    hash: "gGYeaG",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.pop()</code> method removes the last element of the array, and returns that element.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code><span id="orange">[4, 5, 6, 7, 5]</span>.<span id="red">pop()</span>;</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">[4, 5, 6, 7, 5]</code></th>
+                <td>The array from which we want the last item.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.pop()</code></th>
+                <td>The method we use in order to remove the last element and return this.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 15,
@@ -264,7 +552,39 @@ const METHODS = [
     dataType: "array",
     image: "https://image.ibb.co/gVNHjF/Screen_Shot_2017_09_10_at_14_12_01.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push?v=b",
-    hash: "xXKWVw"
+    hash: "xXKWVw",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.push()</code> adds new elements to the end of an array, and returns the new length. If you add console.log(), it will return the new array.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code>let <span id="orange">numbers</span> = <span id="pink">[1, 2, 3]</span>;</code></p>
+            <p><code><span id="orange">numbers</span>.<span id="red">push</span>(<span id="lightpurple">4</span>);</code></p>
+            <p><code>console.log(<span id="orange">numbers</span>);</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="pink">[1, 2, 3]</code></th>
+                <td>The array we want to add an element to.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.push()</code></th>
+                <td>The method we use in order to add an element to the array.</td>
+              </tr>
+              <tr>
+                <th><code id="lightpurple">4</code></th>
+                <td>The element we want to add to the array.</td>
+              </tr>
+              <tr>
+                <th><code>console.log(numbers)</code></th>
+                <td>The console.log(numbers) will return the array, without console.log(numbers) it will return the length.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 16,
@@ -272,9 +592,36 @@ const METHODS = [
     description: "Reduce the values of an array to a single value (going left-to-right).",
     goal: "change",
     dataType: "array",
-    image: "https://image.ibb.co/gVNHjF/Screen_Shot_2017_09_10_at_14_12_01.png",
+    image: "https://image.ibb.co/inVgpQ/Screen_Shot_2017_09_19_at_17_26_01.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce?v=b",
-    hash: ""
+    hash: "LzNWgV",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.reduce()</code> method reduces the values of an array to a single value (going left-to-right).</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code>let <span id="orange">numbers</span> = <span id="pink">[1, 2, 3]</span>;</code></p>
+            <p><code><span id="orange">numbers</span>.<span id="red">reduce((previous, current)</span> => <span id="lightpurple">(previous + current)</span><span id="red">)</span>;</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="pink">[1, 2, 3]</code></th>
+                <td>The array with the values we want to have reduced.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.reduce()</code></th>
+                <td>The method we use in order to reduce the elemnts to a single value</td>
+              </tr>
+              <tr>
+                <th><code id="lightpurple">(previous + current)</code></th>
+                <td>This means that for every item in the array, it will grab that item and adds the value of the next item to that. After that has happened, it will go to the next item and do the exact same.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 17,
@@ -284,17 +631,61 @@ const METHODS = [
     dataType: "array",
     image: "https://image.ibb.co/mLgwBv/Screen_Shot_2017_09_10_at_15_55_47.png",
     URL: "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse",
-    hash: "eGOMzw"
+    hash: "eGOMzw",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.reverse()</code> method returns the array reversed</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code><span id="orange">['USA', 'Canada', 'France', 'Germany']</span>.<span id="red">reverse()</span>;</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">['USA', 'Canada', 'France', 'Germany']</code></th>
+                <td>The array that we want to have reversed.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.reverse()</code></th>
+                <td>The method we use in order to reverse the array.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 18,
     name: ".shift()",
     description: "Removes the first element of an array, and returns that element.",
-    goal: "",
+    goal: "change",
     dataType: "array",
     image: "https://image.ibb.co/ck4f4F/Screen_Shot_2017_09_10_at_16_13_53.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift",
-    hash: "PJYRpQ"
+    hash: "PJYRpQ",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.shift()</code> method returns the first element of the array.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code><span id="orange">[1, 2, 3, 4]</span>.<span id="red">shift()</span>;</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">[1, 2, 3, 4]</code></th>
+                <td>The array from which we want the first item.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.shift()</code></th>
+                <td>The method we use in order to get the first element and return this.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 19,
@@ -304,7 +695,33 @@ const METHODS = [
     dataType: "array",
     image: "https://image.ibb.co/n5dPgv/Screen_Shot_2017_09_10_at_17_44_02.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice",
-    hash: "pWzLPB"
+    hash: "pWzLPB",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.slice()</code> method selects a part of an array, and returns this part as new array.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code><span id="orange">['apple', 'banana', 'mango', 'lemon']</span>.<span id="red">slice</span>(<span id="green">0, 2</span>);</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">['apple', 'banana', 'mango', 'lemon']</code></th>
+                <td>The array we want to have a part of.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.slice()</code></th>
+                <td>The method we use in order to get a certain part of the array.</td>
+              </tr>
+              <tr>
+                <th><code id="green">(0, 2)</code></th>
+                <td>The 0 stands for the first index where the "cut" should begin, the 2 is the end index, which is not included.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 20,

@@ -731,7 +731,33 @@ const METHODS = [
     dataType: "array",
     image: "https://image.ibb.co/c9ZV4F/Screen_Shot_2017_09_10_at_16_32_11.png",
     URL: "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/some",
-    hash: "veBRZJ"
+    hash: "veBRZJ",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.some()</code> checks if any of the elements in an array passes a test.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code><span id="orange">[10, 30, 45, 20, 40]</span>.<span id="red">some</span>(<span id="lightpurple">x => x > 50</span>);</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">[10, 30, 45, 20, 40]</code></th>
+                <td>The array we want to have checked.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.some()</code></th>
+                <td>The method we use in order to check if any of the values in the array passes the test</td>
+              </tr>
+              <tr>
+                <th><code id="lightpurple">(x => x > 50)</code></th>
+                <td>This is our "test". This basically says: check every single item in the array(x), and is this item's value more than 50? Then return true.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 21,
@@ -741,7 +767,29 @@ const METHODS = [
     dataType: "array",
     image: "https://image.ibb.co/ft1UWv/Screen_Shot_2017_09_10_at_16_37_50.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort",
-    hash: "aLoYyd"
+    hash: "aLoYyd",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.sort()</code> method sorts the array alphabetically and numerically.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code><span id="orange">[10, 30, 45, 20, 40]</span>.<span id="red">sort()</span>;</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">[10, 30, 45, 20, 40]</code></th>
+                <td>The array we want to sort.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.sort()</code></th>
+                <td>The method we use in order to sort the array.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 22,
@@ -751,7 +799,29 @@ const METHODS = [
     dataType: "array",
     image: "https://image.ibb.co/msvLMv/Screen_Shot_2017_09_10_at_17_03_14.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice",
-    hash: "yzBKzd"
+    hash: "yzBKzd",
+    explanation: (
+      <div className="explanation">
+        <p id="explanation-text">The <code>.splice()</code> adds and/or removes elements frmo an array.</p>
+        <div className="code-example">
+          <p id="code">
+            <p><code><span id="orange">[10, 30, 45, 20, 40]</span>.<span id="red">sort()</span>;</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">[10, 30, 45, 20, 40]</code></th>
+                <td>The array we want to sort.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.sort()</code></th>
+                <td>The method we use in order to sort the array.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 23,
@@ -881,7 +951,28 @@ const METHODS = [
     dataType: "string",
     image: "https://image.ibb.co/n73mBv/Screen_Shot_2017_09_11_at_08_58_46.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase",
-    hash: "OxLZpY"
+    hash: "OxLZpY",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.toLowerCase()</code> method converts a string to lowercase letters.</p>
+         <div className="code-example">
+          <p id="code">
+            <code><span id="pink">"Hello World"</span>.<span id="red">.toLowerCase();</span>;</code></p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="pink">"Hello World"</code></th>
+                <td>The string we want to convert to all lowercase letters.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.toLowerCase()</code></th>
+                <td> The method we use in order to convert a string to lowercase.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 36,
@@ -891,7 +982,28 @@ const METHODS = [
     dataType: "string",
     image: "https://image.ibb.co/hv021v/Screen_Shot_2017_09_11_at_08_56_18.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase",
-    hash: "yzBjbJ"
+    hash: "yzBjbJ",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.toUpperCase()</code> method converts a string to uppercase letters.</p>
+         <div className="code-example">
+          <p id="code">
+            <code><span id="pink">"Hello World"</span>.<span id="red">.toUpperCase();</span>;</code></p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="pink">"Hello World"</code></th>
+                <td>The string we want to convert to all uppercase letters.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.toLowerCase()</code></th>
+                <td> The method we use in order to convert a string to uppercase.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 37,
@@ -901,7 +1013,28 @@ const METHODS = [
     dataType: "string",
     image: "https://image.ibb.co/by6jya/Screen_Shot_2017_09_11_at_09_06_06.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim",
-    hash: "zEOjwd"
+    hash: "zEOjwd",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.trim()</code> method removes whitespace from both ends of  a string.</p>
+         <div className="code-example">
+          <p id="code">
+            <code><span id="pink">'       Hello World      '</span>.<span id="red">trim()</span>;</code></p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="pink">'Hello World'</code></th>
+                <td>The string we want to have the white space removed from.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.trim()</code></th>
+                <td> The method we use in order to remove the white space.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 38,

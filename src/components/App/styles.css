@@ -6,6 +6,10 @@ div.explanation {
   border-radius: 10px;
 }
 
+#explanation-text {
+  font-size: 20px;
+}
+
 #red {
   color: rgb(170, 16, 47);
 }
@@ -28,19 +32,27 @@ div.explanation {
 
 div.explanation p {
   margin: 1em 0;
+  font-size: 20px;
 }
 
 div.code-example code {
   font-size: 20px;
+  color: white;
 }
 
 div.code-example p {
   margin: 0;
+  font-size: 20px;
 }
 
 div.code-explanation {
   margin-top: 2em;
 }
+
+div.code-explanation p {
+  font-size: 20px;
+}
+
 div.code-explanation code {
   font-size: 20px;
 }
@@ -62,6 +74,9 @@ td {
   background-color: rgba(0, 0, 0, 0.2);
   padding: .5em;
   width: 70%;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-size: 20px;
 }
 
 .results-app {
@@ -69,6 +84,23 @@ td {
   margin-left: 15vw;
 }
 
-.show-method p {
+.warning-text {
+  height: 0em;
+  width: 0em;
+  color: transparent;
+  background-color: transparent;
+}
 
+@media screen and (max-width: 850px) {
+  .warning-text {
+    color: white;
+    background-color: black;
+    height: 3em;
+    width: 100vw;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

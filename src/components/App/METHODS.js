@@ -919,7 +919,7 @@ const METHODS = [
     description: "Joins two or more strings, and returns a new joined strings",
     goal: "join",
     dataType: "string",
-    image: "https://image.ibb.co/kPt71v/Screen_Shot_2017_09_10_at_18_06_36.png",
+    image: "https://image.ibb.co/n88VYk/Screen_Shot_2017_09_20_at_18_17_30.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat",
     hash: "dVbmqz",
     explanation: (
@@ -1027,7 +1027,7 @@ const METHODS = [
     description: "Returns a new string with a specified number of copies of an existing string.",
     goal: "change",
     dataType: "string",
-    image: "https://image.ibb.co/hnp5Mv/Screen_Shot_2017_09_10_at_18_51_41.png",
+    image: "https://image.ibb.co/h6Rjtk/Screen_Shot_2017_09_20_at_18_12_46.png",
     URL: "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/String/repeat",
     hash: "jGNxbE",
     explanation: (
@@ -1063,7 +1063,7 @@ const METHODS = [
     description: "Searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.",
     goal: "change",
     dataType: "string",
-    image: "https://image.ibb.co/nrpY8a/Screen_Shot_2017_09_10_at_20_27_49.png",
+    image: "https://image.ibb.co/g7LNeQ/Screen_Shot_2017_09_20_at_18_15_36.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace",
     hash: "XerqXp",
     explanation: (
@@ -1355,7 +1355,7 @@ const METHODS = [
     description: "Removes whitespace from both ends of a string.",
     goal: "change",
     dataType: "string",
-    image: "https://image.ibb.co/by6jya/Screen_Shot_2017_09_11_at_09_06_06.png",
+    image: "https://image.ibb.co/kf9LYk/Screen_Shot_2017_09_20_at_18_21_19.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim",
     hash: "zEOjwd",
     explanation: (

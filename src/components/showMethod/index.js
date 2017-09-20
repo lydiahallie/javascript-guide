@@ -24,7 +24,7 @@ const showMethod = ({ match }) => {
           </div>
           <h1>{method.name}</h1>
           <img alt={method.name} src={method.image} />
-          <p className="explanation">{method.explanation}</p>
+          <div className="explanation-text">{method.explanation}</div>
         </div>
         <p id="try-code">Try it yourself! Copy the code and paste it in your console.</p>
         <div className="codepen-wrapper">

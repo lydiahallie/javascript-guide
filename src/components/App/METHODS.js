@@ -831,7 +831,28 @@ const METHODS = [
     dataType: "array",
     image: "https://image.ibb.co/khprTa/Screen_Shot_2017_09_10_at_17_11_47.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString",
-    hash: "jGNzzR"
+    hash: "jGNzzR",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.toString()</code> method converts an array into a string.</p>
+         <div className="code-example">
+          <p id="code">
+            <code><span id="pink">['Hello',  'World']</span><span id="red">.toString();</span></code></p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="pink">['Hello', 'World]</code></th>
+                <td>The array we want to have converted to a string.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.toString()</code></th>
+                <td> The method we use in order to convert an array into a string.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 24,
@@ -841,7 +862,43 @@ const METHODS = [
     dataType: "array",
     image: "https://image.ibb.co/nBk1uF/Screen_Shot_2017_09_10_at_17_15_18.png",
     URL: "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift",
-    hash: "NaKYzo"
+    hash: "NaKYzo",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.unshift()</code> method adds a new element to the beginning of the array. It's the opposite of the <code>.shift()</code> method</p>
+         <div className="code-example">
+          <p id="code">
+            <p><code>let <span id="orange">numbers</span> = <span id="pink">[1, 2, 3, 4, 5]</span>;</code></p>
+            <p><code><span id="orange">numbers</span>.<span id="red">unshift(<span id="lightpurple">9</span>)</span>;</code></p>
+            <p><code>console.log(<span id="orange">numbers</span>)</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">numbers</code></th>
+                <td>The name of the array we want to add a value to.</td>
+              </tr>
+              <tr>
+                <th><code id="pink">[1, 2, 3, 4, 5]</code></th>
+                <td> The array we want to add a value to.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.unshift()</code></th>
+                <td> The method we use in order to add its arguments value to the beginning of the array.</td>
+              </tr>
+              <tr>
+                <th><code id="lightpurple">9</code></th>
+                <td>The value we want to add to the array.</td>
+              </tr>
+              <tr>
+                <th><code>console.log(<span id="orange">numbers</span>)</code></th>
+                <td>If you don't console log the array, it will return the new length of the array instead of the actual array.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 25,
@@ -851,7 +908,33 @@ const METHODS = [
     dataType: "string",
     image: "https://image.ibb.co/kPt71v/Screen_Shot_2017_09_10_at_18_06_36.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat",
-    hash: "dVbmqz"
+    hash: "dVbmqz",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.concat()</code> joins two or more strings, and returns the new string.</p>
+         <div className="code-example">
+          <p id="code">
+            <p><code><span id="orange">'Hello'</span>.<span id="red">concat</span>('<span id="pink">World</span>')</code></p>
+          </p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="orange">'Hello'</code></th>
+                <td>The array we already have, and want to add a value to.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.concat()</code></th>
+                <td> The method we use in order to concatenate both strings.</td>
+              </tr>
+              <tr>
+                <th><code id="pink">'World'</code></th>
+                <td>The string we want to concatenate to our original string. By default, there is no space inbetween the words. If you want to have a space, or any other character, you have to add that to the string in the method's argument.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 26,
@@ -861,7 +944,32 @@ const METHODS = [
     dataType: "string",
     image: "https://image.ibb.co/bUuVMv/Screen_Shot_2017_09_10_at_18_22_27.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith",
-    hash: "NaKYOJ"
+    hash: "NaKYOJ",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.endsWith()</code> method checks whether a string ends with the word or characters given in its argument.</p>
+         <div className="code-example">
+          <p id="code">
+            <code><span id="pink">"Dogs are cute"</span>.<span id="red">endsWith(<span id="orange">"cute"</span>)</span>;</code></p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="pink">"Dogs are cute"</code></th>
+                <td>The string we want to have checked.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.endsWith()</code></th>
+                <td> The method we use in order to check whether a string ends with the given argument.</td>
+              </tr>
+              <tr>
+                <th><code id="orange">"cute"</code></th>
+                <td> Our given argument, if the string ends with this word, it will return true, otherwise it will return false.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 27,
@@ -871,7 +979,32 @@ const METHODS = [
     dataType: "string",
     image: "https://image.ibb.co/gftMuF/Screen_Shot_2017_09_10_at_18_42_37.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes",
-    hash: "bobMNy"
+    hash: "bobMNy",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.includes()</code> method checks whether a string includes the word or characters given in its argument.</p>
+         <div className="code-example">
+          <p id="code">
+            <code><span id="pink">"Dogs are cute"</span>.<span id="red">includes(<span id="orange">"cute"</span>)</span>;</code></p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="pink">"Dogs are cute"</code></th>
+                <td>The string we want to have checked.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.includes()</code></th>
+                <td> The method we use in order to check whether a string includes the given argument.</td>
+              </tr>
+              <tr>
+                <th><code id="orange">"cute"</code></th>
+                <td> Our given argument, if the string contains with this word, it will return true, otherwise it will return false.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 28,
@@ -881,7 +1014,32 @@ const METHODS = [
     dataType: "string",
     image: "https://image.ibb.co/hnp5Mv/Screen_Shot_2017_09_10_at_18_51_41.png",
     URL: "https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/String/repeat",
-    hash: "jGNxbE"
+    hash: "jGNxbE",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.repeat()</code> method checks repeats a string the amount of times that's specified in its argument</p>
+         <div className="code-example">
+          <p id="code">
+            <code>"<span id="pink">Hello</span>".<span id="red">repeat(<span id="orange">2</span>)</span>;</code></p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="pink">Hello</code></th>
+                <td>The value we want to have repeated.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.repeat()</code></th>
+                <td> The method we use in order to repeat a value.</td>
+              </tr>
+              <tr>
+                <th><code id="orange">2</code></th>
+                <td>The amount of times we want to repeat the value.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 29,
@@ -891,7 +1049,36 @@ const METHODS = [
     dataType: "string",
     image: "https://image.ibb.co/nrpY8a/Screen_Shot_2017_09_10_at_20_27_49.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace",
-    hash: "XerqXp"
+    hash: "XerqXp",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.replace()</code> method replaces specified value in the string, and returns a new string where the specified value is replaced.</p>
+         <div className="code-example">
+          <p id="code">
+            <code><span id="pink">"Dogs are cute"</span>.<span id="red">replace</span>(<span id="orange">"cute"</span>, <span id="green">"adorable"</span>);</code></p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="pink">"Dogs are cute"</code></th>
+                <td>The string in which we want to replace a certain value.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.replace()</code></th>
+                <td> The method we use in order to replace a value</td>
+              </tr>
+              <tr>
+                <th><code id="orange">"cute"</code></th>
+                <td>The original value that we want to replace in the string.</td>
+              </tr>
+              <tr>
+                <th><code id="green">"adorable"</code></th>
+                <td>The value we want to replace the original value with.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 30,
@@ -901,7 +1088,36 @@ const METHODS = [
     dataType: "string",
     image: "https://image.ibb.co/mb8X1v/Screen_Shot_2017_09_10_at_20_31_19.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice",
-    hash: "QqLrEw"
+    hash: "QqLrEw",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.slice()</code> method extracts a part of a string and returns a new string.</p>
+         <div className="code-example">
+          <p id="code">
+            <code><span id="pink">"Hello World"</span>.<span id="red">slice</span>(<span id="orange">1</span>, <span id="green">5</span>);</code></p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="pink">"Hello World"</code></th>
+                <td>The string we want to extract a certain part from.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.slice()</code></th>
+                <td> The method we use in order to extract a certain part of the string.</td>
+              </tr>
+              <tr>
+                <th><code id="orange">1</code></th>
+                <td>The begin index of the extracted part</td>
+              </tr>
+              <tr>
+                <th><code id="green">5</code></th>
+                <td>The end index of the extracted part WHICH IS NOT INCLUDED.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 31,
@@ -911,7 +1127,28 @@ const METHODS = [
     dataType: "string",
     image: "https://image.ibb.co/gJWfoa/Screen_Shot_2017_09_10_at_20_33_04.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split",
-    hash: "veBjKz"
+    hash: "veBjKz",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.split()</code> method splits a string into an array or substring.</p>
+         <div className="code-example">
+          <p id="code">
+            <code><span id="pink">'Hello World'</span>.<span id="red">split(' ')</span>;</code></p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="pink">'Hello World'</code></th>
+                <td>The string we want to have converted to an array.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.split(' ')</code></th>
+                <td> The method we use in order to split a string into an array.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 32,
@@ -921,17 +1158,71 @@ const METHODS = [
     dataType: "string",
     image: "https://image.ibb.co/mUUa4F/Screen_Shot_2017_09_10_at_20_37_45.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith",
-    hash: "YrKLpO"
+    hash: "YrKLpO",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.startsWith()</code> method checks whether a string begins with the word or characters given in its argument.</p>
+         <div className="code-example">
+          <p id="code">
+            <code><span id="pink">"Dogs are cute"</span>.<span id="red">startsWith(<span id="orange">"Dogs"</span>)</span>;</code></p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="pink">"Dogs are cute"</code></th>
+                <td>The string we want to have checked.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.startsWith()</code></th>
+                <td> The method we use in order to check whether a string starts with the given argument.</td>
+              </tr>
+              <tr>
+                <th><code id="orange">"Dogs"</code></th>
+                <td> Our given argument, if the string starts with this word (and the uppercase D), it will return true, otherwise it will return false.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
   {
     id: 33,
     name: ".substr()",
-    description: "Extracts the characters from a string, beginning at a specified start position, and through the specified number of character.",
+    description: "Extracts the characters from a string, beginning at a specified start position, and has a specified length.",
     goal: "change",
     dataType: "string",
     image: "https://image.ibb.co/fD6irv/Screen_Shot_2017_09_10_at_20_41_08.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr",
-    hash: "WZeJpb"
+    hash: "WZeJpb",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.substr()</code> returns the characters from a string, beginning at a specified start position, and has a specified length</p>
+         <div className="code-example">
+           <p id="code">
+             <code><span id="pink">"Hello World"</span>.<span id="red">substr</span>(<span id="orange">1</span>, <span id="green">4</span>);</code></p>
+           <div className="code-explanation">
+             <table>
+               <tr>
+                 <th><code id="pink">"Hello World"</code></th>
+                 <td>The string we want to extract a certain part from.</td>
+               </tr>
+               <tr>
+                 <th><code id="red">.substr()</code></th>
+                 <td> The method we use in order to extract a certain part of the string.</td>
+               </tr>
+               <tr>
+                 <th><code id="orange">1</code></th>
+                 <td>The begin index of the extracted part</td>
+               </tr>
+               <tr>
+                 <th><code id="green">4</code></th>
+                 <td>The length of our extracted part</td>
+               </tr>
+             </table>
+           </div>
+         </div>
+       </div>
+    )
   },
   {
     id: 34,
@@ -941,7 +1232,36 @@ const METHODS = [
     dataType: "string",
     image: "https://image.ibb.co/dFqKgv/Screen_Shot_2017_09_11_at_08_51_42.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring",
-    hash: "aLoGJL"
+    hash: "aLoGJL",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.substring()</code> returns the characters from a string between two specified indices.</p>
+         <div className="code-example">
+           <p id="code">
+             <code><span id="pink">"Hello World"</span>.<span id="red">substring</span>(<span id="orange">1</span>, <span id="green">4</span>);</code></p>
+           <div className="code-explanation">
+             <table>
+               <tr>
+                 <th><code id="pink">"Hello World"</code></th>
+                 <td>The string we want to extract a certain part from.</td>
+               </tr>
+               <tr>
+                 <th><code id="red">.substr()</code></th>
+                 <td> The method we use in order to extract a certain part of the string.</td>
+               </tr>
+               <tr>
+                 <th><code id="orange">1</code></th>
+                 <td>The begin index of the extracted part</td>
+               </tr>
+               <tr>
+                 <th><code id="green">4</code></th>
+                 <td>The end index of the extracted part</td>
+               </tr>
+             </table>
+           </div>
+         </div>
+       </div>
+    )
   },
   {
     id: 35,
@@ -1044,7 +1364,32 @@ const METHODS = [
     dataType: "string",
     image: "https://image.ibb.co/cO4Y8a/Screen_Shot_2017_09_10_at_18_49_28.png",
     URL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf",
-    hash: "qPWYdV"
+    hash: "qPWYdV",
+    explanation: (
+      <div className="explanation">
+        <p>The <code>.indexOf()</code> method method returns the position of the first found occurrence of a specific character in a string.</p>
+         <div className="code-example">
+          <p id="code">
+            <code><span id="pink">'Hello World'</span>.<span id="red">indexOf(</span>'<span id="lightpurple">Hello</span>')';</code></p>
+          <div className="code-explanation">
+            <table>
+              <tr>
+                <th><code id="pink">'Hello World'</code></th>
+                <td>The string we want check.</td>
+              </tr>
+              <tr>
+                <th><code id="red">.indexOf()</code></th>
+                <td>The method we use in order to find the index of a specific character or word, given in its argument.</td>
+              </tr>
+              <tr>
+                <th><code id="lightpurple">.indexOf()</code></th>
+                <td>The word we want to get the index returned of.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    )
   },
 ];
 
